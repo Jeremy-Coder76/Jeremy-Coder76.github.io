@@ -1,0 +1,7 @@
+site_name: jleclech blog
+nav:
+    - Home: 'index.md'
+    - 'my_journey':
+        - 'Journey': 'my_journey/journey.md'
+    - About:
+        - 'About': 'about.md'
