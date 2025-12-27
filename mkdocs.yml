@@ -5,3 +5,6 @@ nav:
         - 'Journey': 'my_journey/journey.md'
     - About:
         - 'About': 'about.md'
+
+extra_css:
+    - css/autumn-theme.css

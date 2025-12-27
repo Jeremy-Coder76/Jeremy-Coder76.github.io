@@ -1,0 +1,471 @@
+/* ========================================
+   AUTUMN THEME - Beautiful Fall Colors
+   ======================================== */
+
+/* Import elegant fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+/* ========================================
+   ROOT VARIABLES - Autumn Color Palette
+   ======================================== */
+:root {
+    /* Primary autumn colors */
+    --autumn-burnt-orange: #D2691E;
+    --autumn-golden: #DAA520;
+    --autumn-rust: #B7410E;
+    --autumn-burgundy: #800020;
+    --autumn-amber: #FFBF00;
+    --autumn-terracotta: #E2725B;
+
+    /* Background colors */
+    --autumn-cream: #FFF8DC;
+    --autumn-warm-white: #FAF0E6;
+    --autumn-light-peach: #FFEFD5;
+    --autumn-pale-gold: #FFF5E1;
+
+    /* Text colors */
+    --autumn-dark-brown: #3E2723;
+    --autumn-medium-brown: #5D4037;
+    --autumn-warm-gray: #8D6E63;
+
+    /* Accent colors */
+    --autumn-maple-red: #D73502;
+    --autumn-oak-brown: #8B4513;
+    --autumn-leaf-green: #556B2F;
+}
+
+/* ========================================
+   GLOBAL STYLES
+   ======================================== */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--autumn-dark-brown) !important;
+    background: linear-gradient(135deg, var(--autumn-pale-gold) 0%, var(--autumn-warm-white) 50%, var(--autumn-light-peach) 100%) !important;
+    background-attachment: fixed !important;
+    line-height: 1.7;
+}
+
+body::before {
+    background: linear-gradient(135deg, var(--autumn-pale-gold) 0%, var(--autumn-warm-white) 50%, var(--autumn-light-peach) 100%) !important;
+}
+
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    color: var(--autumn-burgundy) !important;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(139, 69, 19, 0.1);
+}
+
+h1 {
+    font-size: 2.8rem !important;
+    border-bottom: 3px solid var(--autumn-golden);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(90deg, var(--autumn-rust), var(--autumn-burnt-orange), var(--autumn-golden));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+h2 {
+    font-size: 2.2rem !important;
+    color: var(--autumn-burnt-orange) !important;
+    border-left: 5px solid var(--autumn-amber);
+    padding-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.8rem !important;
+    color: var(--autumn-rust) !important;
+    margin-top: 1.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    color: var(--autumn-medium-brown);
+    margin-bottom: 1.2rem;
+}
+
+/* ========================================
+   NAVIGATION BAR
+   ======================================== */
+.navbar {
+    background: linear-gradient(135deg, var(--autumn-burgundy) 0%, var(--autumn-rust) 50%, var(--autumn-burnt-orange) 100%) !important;
+    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.3);
+    border-bottom: 3px solid var(--autumn-golden);
+}
+
+.navbar-brand {
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem !important;
+    font-weight: 700;
+    color: var(--autumn-cream) !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: var(--autumn-amber) !important;
+    transform: scale(1.05);
+}
+
+.nav-link {
+    color: var(--autumn-warm-white) !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 191, 0, 0.2) !important;
+    color: var(--autumn-amber) !important;
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    background-color: var(--autumn-golden) !important;
+    color: var(--autumn-dark-brown) !important;
+    font-weight: 700;
+}
+
+/* ========================================
+   MAIN CONTENT CONTAINER
+   ======================================== */
+.container {
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(139, 69, 19, 0.2);
+    padding: 2.5rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(218, 165, 32, 0.3);
+}
+
+.col-md-9 {
+    padding: 2rem;
+    background-color: rgba(255, 248, 220, 0.6);
+    border-radius: 12px;
+    box-shadow: inset 0 2px 8px rgba(139, 69, 19, 0.1);
+}
+
+/* ========================================
+   LINKS
+   ======================================== */
+a {
+    color: var(--autumn-rust) !important;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+a:hover {
+    color: var(--autumn-maple-red) !important;
+    border-bottom: 2px solid var(--autumn-golden);
+    text-shadow: 0 0 8px rgba(210, 105, 30, 0.3);
+}
+
+/* ========================================
+   SIDEBAR
+   ======================================== */
+.bs-sidebar {
+    background: linear-gradient(180deg, var(--autumn-cream) 0%, var(--autumn-warm-white) 100%) !important;
+    border: 2px solid var(--autumn-golden) !important;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(139, 69, 19, 0.15);
+    padding: 1.5rem !important;
+}
+
+.bs-sidebar .nav > li > a {
+    color: var(--autumn-medium-brown) !important;
+    padding: 0.8rem 1.2rem !important;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.bs-sidebar .nav > li > a:hover {
+    background-color: var(--autumn-light-peach) !important;
+    color: var(--autumn-rust) !important;
+    border-right: 4px solid var(--autumn-golden) !important;
+    transform: translateX(5px);
+}
+
+.bs-sidebar .nav > li > a.active {
+    background: linear-gradient(90deg, var(--autumn-golden), var(--autumn-amber)) !important;
+    color: var(--autumn-dark-brown) !important;
+    font-weight: 700;
+    border-right: 4px solid var(--autumn-rust) !important;
+    box-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+}
+
+/* ========================================
+   CODE BLOCKS
+   ======================================== */
+pre {
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%) !important;
+    border: 2px solid var(--autumn-golden) !important;
+    border-radius: 12px;
+    padding: 1.5rem !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    overflow-x: auto;
+}
+
+code {
+    background-color: var(--autumn-light-peach) !important;
+    color: var(--autumn-rust) !important;
+    border: 1px solid var(--autumn-golden) !important;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem !important;
+    font-family: 'Monaco', 'Courier New', monospace;
+    font-weight: 600;
+}
+
+pre code {
+    background-color: transparent !important;
+    color: #f8f8f2 !important;
+    border: none !important;
+}
+
+/* ========================================
+   BLOCKQUOTES
+   ======================================== */
+blockquote {
+    border-left: 5px solid var(--autumn-golden) !important;
+    background: linear-gradient(90deg, var(--autumn-light-peach) 0%, transparent 100%);
+    padding: 1.5rem !important;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: var(--autumn-medium-brown) !important;
+    box-shadow: 2px 2px 8px rgba(139, 69, 19, 0.1);
+}
+
+/* ========================================
+   TABLES
+   ======================================== */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.15);
+    margin: 1.5rem 0;
+}
+
+thead {
+    background: linear-gradient(135deg, var(--autumn-burnt-orange), var(--autumn-rust)) !important;
+}
+
+thead th {
+    color: var(--autumn-cream) !important;
+    font-weight: 700;
+    padding: 1rem !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+tbody tr {
+    background-color: var(--autumn-warm-white);
+    transition: all 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--autumn-light-peach);
+}
+
+tbody tr:hover {
+    background-color: var(--autumn-pale-gold) !important;
+    transform: scale(1.01);
+    box-shadow: 0 2px 8px rgba(139, 69, 19, 0.2);
+}
+
+tbody td {
+    padding: 1rem !important;
+    color: var(--autumn-medium-brown) !important;
+    border-bottom: 1px solid rgba(218, 165, 32, 0.2);
+}
+
+/* ========================================
+   BUTTONS & BADGES
+   ======================================== */
+.btn, button {
+    background: linear-gradient(135deg, var(--autumn-burnt-orange), var(--autumn-rust)) !important;
+    color: var(--autumn-cream) !important;
+    border: 2px solid var(--autumn-golden) !important;
+    border-radius: 8px;
+    padding: 0.7rem 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.3);
+}
+
+.btn:hover, button:hover {
+    background: linear-gradient(135deg, var(--autumn-rust), var(--autumn-burgundy)) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(139, 69, 19, 0.4);
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+footer {
+    background: linear-gradient(135deg, var(--autumn-dark-brown), var(--autumn-oak-brown)) !important;
+    color: var(--autumn-cream) !important;
+    padding: 2rem 0;
+    margin-top: 3rem !important;
+    border-top: 3px solid var(--autumn-golden);
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer a {
+    color: var(--autumn-amber) !important;
+}
+
+footer a:hover {
+    color: var(--autumn-golden) !important;
+}
+
+/* ========================================
+   IMAGES
+   ======================================== */
+img {
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(139, 69, 19, 0.3);
+    border: 3px solid var(--autumn-golden) !important;
+    background-color: var(--autumn-warm-white) !important;
+    transition: all 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgba(139, 69, 19, 0.4);
+}
+
+/* ========================================
+   HORIZONTAL RULE
+   ======================================== */
+hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--autumn-golden), var(--autumn-amber), var(--autumn-golden), transparent);
+    margin: 2rem 0;
+    border-radius: 2px;
+}
+
+/* ========================================
+   ADMONITIONS & ALERTS
+   ======================================== */
+.admonition, details {
+    border-left: 5px solid var(--autumn-golden) !important;
+    background: linear-gradient(90deg, var(--autumn-light-peach) 0%, var(--autumn-warm-white) 100%) !important;
+    border-radius: 0 12px 12px 0 !important;
+    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.15);
+}
+
+.admonition.note {
+    border-left-color: var(--autumn-burnt-orange) !important;
+    background: linear-gradient(90deg, rgba(210, 105, 30, 0.1) 0%, transparent 100%) !important;
+}
+
+.admonition.warning {
+    border-left-color: var(--autumn-maple-red) !important;
+    background: linear-gradient(90deg, rgba(215, 53, 2, 0.1) 0%, transparent 100%) !important;
+}
+
+.admonition-title, summary {
+    color: var(--autumn-rust) !important;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ========================================
+   SCROLLBAR STYLING
+   ======================================== */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--autumn-warm-white);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--autumn-burnt-orange), var(--autumn-rust));
+    border-radius: 10px;
+    border: 2px solid var(--autumn-warm-white);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, var(--autumn-rust), var(--autumn-burgundy));
+}
+
+/* ========================================
+   DECORATIVE ELEMENTS
+   ======================================== */
+/* Autumn leaf accent for main headings */
+h1::before {
+    content: "🍂 ";
+    margin-right: 0.5rem;
+}
+
+/* Add subtle hover glow effect */
+.container:hover {
+    box-shadow: 0 12px 40px rgba(218, 165, 32, 0.3);
+}
+
+/* Smooth transitions for all elements */
+* {
+    transition: all 0.2s ease-in-out;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem !important;
+    }
+
+    h2 {
+        font-size: 1.6rem !important;
+    }
+
+    .navbar-brand {
+        font-size: 1.4rem !important;
+    }
+
+    .container {
+        padding: 1.5rem !important;
+    }
+}
+
+/* ========================================
+   SELECTION STYLING
+   ======================================== */
+::selection {
+    background-color: var(--autumn-golden);
+    color: var(--autumn-dark-brown);
+}
+
+::-moz-selection {
+    background-color: var(--autumn-golden);
+    color: var(--autumn-dark-brown);
+}
