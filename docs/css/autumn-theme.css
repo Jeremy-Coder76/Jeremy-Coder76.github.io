@@ -337,6 +337,19 @@ body {
     border-bottom: 1px solid rgba(218, 165, 32, 0.2);
 }
 
+/* Dark mode table text - improve readability */
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) td {
+    color: var(--autumn-cream);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr {
+    background-color: rgba(61, 38, 23, 0.5);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:nth-child(even) {
+    background-color: rgba(77, 50, 34, 0.5);
+}
+
 /* ========================================
    BLOCKQUOTES & ADMONITIONS
    ======================================== */
