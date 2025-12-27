@@ -268,17 +268,19 @@ Since September 2020, I've been a **Network Consulting Engineer** in France, whe
 
 Working mainly on **Backbone and Edge networks** with:
 
-- **Cisco IOS-XR**
-
-- **Nokia SROS**
-
-- **Huawei**
+| Platform | Description |
+|----------|-------------|
+| **Cisco IOS-XR** | Core routing platform |
+| **Nokia SROS** | Service router OS |
+| **Huawei** | Multi-vendor environments |
 
 ---
 
 **Datacenter** (less frequent, but still present):
 
-- Fabric IP VXLAN (NX-OS + ACI) for datacenter environments
+| Technology | Use Case |
+|------------|----------|
+| Fabric IP VXLAN | NX-OS + ACI for datacenter environments |
 
 ---
 
@@ -286,17 +288,14 @@ Working mainly on **Backbone and Edge networks** with:
 
 The most important focus today is the creation of **web applications** and **NSO services** to deploy infrastructure and services across Service Provider networks.
 
-- **Languages:** Python
-
-- **Web Frameworks:** Django, FastAPI (for building automation web applications)
-
-- **Network Orchestration:** Cisco NSO (for service deployment across SP networks)
-
-- **CI/CD:** GitLab pipelines for automated testing and deployment
-
-- **Configuration Management:** Ansible
-
-- **AI-Assisted Development:** GitHub Copilot (since 2024)
+| Category | Tools |
+|----------|-------|
+| **Languages** | Python |
+| **Web Frameworks** | Django, FastAPI |
+| **Network Orchestration** | Cisco NSO |
+| **CI/CD** | GitLab pipelines |
+| **Configuration Management** | Ansible |
+| **AI-Assisted Development** | GitHub Copilot (since 2024) |
 
 **Why This Matters:**
 Service Provider networks operate at massive scale. My work focuses on building complete automation solutions - from web interfaces that operators use, to NSO services that orchestrate configuration across thousands of devices. This requires combining software development skills (Django/FastAPI) with deep networking knowledge (IOS-XR, SROS, Huawei) and orchestration expertise (NSO).
