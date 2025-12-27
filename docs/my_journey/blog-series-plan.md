@@ -66,9 +66,33 @@ The journey from a sales engineer with no programming knowledge to a network dev
 **Content:**
 - **Orange Business Services (2015-2018)** - Pre-sales Engineer apprenticeship during ESIGELEC studies
   - Job: RFPs, custom network architectures, commercial proposals, client meetings
-  - Problem: Hours spent manually creating similar proposals in Word
+  - Problem: Repetitive manual work creating similar proposals in Word
   - Solution: Self-taught VBA (Visual Basic for Applications) for document automation
   - Realization: "Why am I doing this manually?" became my mantra
+
+- **The Bandwidth Eligibility Automation**
+  - **Context:** Tool to determine bandwidth eligibility for customers with 100+ sites
+  - **The Business Problem:**
+    - Customers (RFPs and private requests) needed to know what bandwidth Orange could deliver at each site
+    - RFP documents (PDFs) contained all customer addresses and their desired bandwidth requirements
+    - Bandwidth eligibility was the FIRST thing to check for any L2, L3, or internet connection
+    - This verification was needed for every RFP and private customer request
+
+  - **The Manual Pain:**
+    - Extract addresses from PDF documents
+    - Check each site individually for available bandwidth
+    - Compare desired vs. available bandwidth for 100+ sites
+    - Highly repetitive and error-prone
+
+  - **The Automation Solution:**
+    - Discovered the bandwidth calculation tool supported CSV import
+    - **Workflow created:**
+      1. Extract customer addresses and desired bandwidth from PDF to CSV
+      2. Add required fields (phone number, Orange internal customer number)
+      3. Import CSV into the bandwidth calculation tool
+      4. Export results from the tool
+      5. Compare: capable bandwidth >= desired bandwidth for each site
+    - Result: Quick eligibility assessment for entire customer portfolio
 
 - **Engineering Education (2013-2018)**
   - ESIGELEC: Engineering degree of business in IT and Network
@@ -78,7 +102,7 @@ The journey from a sales engineer with no programming knowledge to a network dev
   - Choice: Stay in pre-sales (comfortable, good pay) OR move to build & run (hands-on, technical)
   - Decision: **I chose the technical path**
 
-**Key Takeaway:** Automation starts with asking "Why am I doing this manually?" - not with being hired as an automation engineer.
+**Key Takeaway:** Automation starts with asking "Why am I doing this manually?" - not with being hired as an automation engineer. Even in pre-sales, finding ways to streamline repetitive tasks (like bandwidth eligibility checks for 100+ sites) builds the foundation for an automation mindset.
 
 #### Post 1.2: "First Steps: From Postman to Python"
 **Content:**

@@ -78,11 +78,50 @@ While studying at ESIGELEC engineering school, I started an apprenticeship at **
 
 - Accompany sales teams to client meetings
 
-**The Problem:** I spent hours manually creating similar network proposals in Word, copying and pasting, adjusting formatting, updating tables...
+**The Problem:** I was repeatedly doing the same manual work - creating similar network proposals in Word, copying and pasting, adjusting formatting, updating tables...
 
 **The Solution:** I taught myself **VBA (Visual Basic for Applications)** to automate document generation. Not glamorous, but it was my first taste of automation's power.
 
 **The Realization:** *"Why am I doing this manually?"* became my mantra.
+
+### The Bandwidth Eligibility Automation
+
+Another significant automation I discovered at Orange was for **bandwidth eligibility checks** - a critical task for every RFP and private customer request.
+
+**The Business Need:**
+
+- Customers with 100+ sites needed to know what bandwidth Orange could deliver at each location
+
+- RFP documents (PDFs) contained all customer addresses and their desired bandwidth requirements
+
+- Bandwidth eligibility was the FIRST thing to check for any L2, L3, or internet connection
+
+**The Manual Pain:**
+
+- Extract addresses from PDF documents
+
+- Check each site individually for available bandwidth
+
+- Compare desired vs. available bandwidth for 100+ sites
+
+- Highly repetitive and error-prone
+
+**The Solution:**
+
+I discovered the bandwidth calculation tool supported CSV import. This led to a streamlined workflow:
+
+1. Extract customer addresses and desired bandwidth from PDF to CSV
+
+2. Add required fields (phone number, Orange internal customer number)
+
+3. Import CSV into the bandwidth calculation tool
+
+4. Export results from the tool
+
+5. Compare: capable bandwidth >= desired bandwidth for each site
+
+!!! success "The Result"
+    Quick eligibility assessment for entire customer portfolios. What required checking site-by-site became a bulk operation.
 
 ### Orange Polska: The ONAP Mission (Summer 2017)
 
