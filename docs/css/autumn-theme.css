@@ -253,13 +253,23 @@ blockquote {
 /* ========================================
    TABLES
    ======================================== */
+/* Table wrapper for horizontal scrolling on mobile */
+.table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 1.5rem 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.15);
+}
+
 table {
     border-collapse: separate;
     border-spacing: 0;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.15);
-    margin: 1.5rem 0;
+    margin: 0;
+    width: 100%;
+    min-width: 600px; /* Prevents table from becoming too narrow */
 }
 
 thead {
@@ -272,6 +282,7 @@ thead th {
     padding: 1rem !important;
     text-transform: uppercase;
     letter-spacing: 1px;
+    white-space: nowrap;
 }
 
 tbody tr {
@@ -448,12 +459,109 @@ h1::before {
         font-size: 1.6rem !important;
     }
 
+    h3 {
+        font-size: 1.4rem !important;
+    }
+
     .navbar-brand {
         font-size: 1.4rem !important;
     }
 
     .container {
         padding: 1.5rem !important;
+    }
+
+    .col-md-9 {
+        padding: 1rem !important;
+    }
+
+    /* Mobile table improvements */
+    table {
+        min-width: 500px; /* Smaller min-width for mobile */
+        font-size: 0.9rem;
+    }
+
+    thead th {
+        padding: 0.7rem !important;
+        font-size: 0.85rem;
+    }
+
+    tbody td {
+        padding: 0.7rem !important;
+        font-size: 0.9rem;
+    }
+
+    /* Add scroll hint for tables */
+    .table-wrapper::after {
+        content: "← Swipe to see more →";
+        display: block;
+        text-align: center;
+        font-size: 0.8rem;
+        color: var(--autumn-warm-gray);
+        padding: 0.5rem;
+        font-style: italic;
+    }
+
+    /* Adjust paragraph and text sizing */
+    p {
+        font-size: 1rem;
+    }
+
+    /* Code blocks on mobile */
+    pre {
+        padding: 1rem !important;
+        font-size: 0.85rem;
+    }
+
+    code {
+        font-size: 0.85rem;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6rem !important;
+    }
+
+    h2 {
+        font-size: 1.3rem !important;
+    }
+
+    h3 {
+        font-size: 1.1rem !important;
+    }
+
+    .container {
+        padding: 1rem !important;
+    }
+
+    .col-md-9 {
+        padding: 0.75rem !important;
+    }
+
+    /* More compact table on very small screens */
+    table {
+        min-width: 400px;
+        font-size: 0.85rem;
+    }
+
+    thead th {
+        padding: 0.5rem !important;
+        font-size: 0.75rem;
+    }
+
+    tbody td {
+        padding: 0.5rem !important;
+        font-size: 0.85rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem !important;
     }
 }
 
