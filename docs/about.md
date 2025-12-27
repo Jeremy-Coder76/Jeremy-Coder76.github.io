@@ -40,11 +40,6 @@ I work with Service Provider customers to design and implement network automatio
 | **Configuration Management** | Ansible |
 | **AI-Assisted Development** | GitHub Copilot |
 
-**Datacenter** (occasional projects):
-
-- Fabric IP VXLAN
-- Cisco NX-OS & ACI
-
 ---
 
 ## My Philosophy
