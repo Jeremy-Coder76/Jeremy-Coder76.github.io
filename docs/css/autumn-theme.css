@@ -767,3 +767,51 @@ body {
         opacity: 0.8;
     }
 }
+
+/* ========================================
+   IMPROVED LIST SPACING FOR VISIBILITY
+   ======================================== */
+.md-typeset ul li,
+.md-typeset ol li {
+    margin-bottom: 0.75rem;
+    line-height: 1.8;
+}
+
+.md-typeset ul li:last-child,
+.md-typeset ol li:last-child {
+    margin-bottom: 0;
+}
+
+/* Extra spacing for nested lists */
+.md-typeset ul ul,
+.md-typeset ol ol,
+.md-typeset ul ol,
+.md-typeset ol ul {
+    margin-top: 0.5rem;
+}
+
+/* Bold text in lists - make it stand out more */
+.md-typeset li strong {
+    color: var(--autumn-rust);
+}
+
+/* Paragraphs spacing */
+.md-typeset p {
+    margin-bottom: 1.25rem;
+}
+
+/* Better spacing for content sections */
+.md-typeset h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.md-typeset h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.md-typeset h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}

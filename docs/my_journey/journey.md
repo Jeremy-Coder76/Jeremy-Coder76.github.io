@@ -30,10 +30,15 @@ My name is **Jeremy LE CLEC'H**. I'm a Network Consulting Engineer at Cisco, spe
 But I didn't start here. My journey began in 2015 as a pre-sales engineer with no knowledge of network automation, programming, or even REST APIs. This blog chronicles my transformation from a sales engineer creating proposals in Word to a network developer building CI/CD pipelines for Service Provider infrastructures.
 
 **Current Focus:**
+
 - Service Provider: Backbone and edge networks (IOS-XR, SROS, Huawei)
+
 - Web Development: Django and FastAPI applications for network automation
+
 - Network Orchestration: Cisco NSO for service deployment across SP networks
+
 - Automation: Python, CI/CD (GitLab), Ansible, GitHub Copilot
+
 - Datacenter: Fabric IP VXLAN, NX-OS, ACI (occasional projects)
 
 [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/jeremleclech.svg?style=social&label=Follow%20%40jeremleclech)](https://twitter.com/jeremleclech)
@@ -64,9 +69,13 @@ But I didn't start here. My journey began in 2015 as a pre-sales engineer with n
 ### Orange Business Services: Where It All Began
 
 While studying at ESIGELEC engineering school, I started an apprenticeship at **Orange Business Services** as a Pre-Sales Engineer in 2015. My job was to:
+
 - Respond to customer RFPs (Request for Proposals)
+
 - Design custom network architectures
+
 - Create commercial proposals
+
 - Accompany sales teams to client meetings
 
 **The Problem:** I spent hours manually creating similar network proposals in Word, copying and pasting, adjusting formatting, updating tables...
@@ -80,10 +89,15 @@ While studying at ESIGELEC engineering school, I started an apprenticeship at **
 During my studies, I did a 4-month mission at **Orange Polska** in Warsaw as a Virtualization Engineer. This was transformative:
 
 **Project:** Analyze and implement ONAP (Open Network Automation Platform)
+
 **Skills Developed:**
+
 - Python scripting
+
 - Bash automation
+
 - Netconf protocol
+
 - Yang models and JSON formats
 
 **Key Insight:** I saw that automation would be implemented in the future, and that I would like to be part of it.
@@ -106,15 +120,25 @@ After graduating from ESIGELEC with an Engineering degree of business in IT and 
 Joining **Nomios** as a **Network & Security Engineer** in September 2018 was a major challenge. This was my first hands-on job, working directly in front of customers on a daily basis while learning security technologies. During my time at Nomios, I worked with over 30 different customers.
 
 **Technologies I Managed:**
+
 - **Firewalls:** Palo Alto (PCNSE certified), Fortinet
+
 - **Proxy:** Zscaler
+
 - **Other:** Riverbed Steel Connect, Cisco ASA/Firepower
+
 - **Cloud:** Azure (Associate Administrator 103), AWS
 
+---
+
 **The Challenge:** Each vendor had different:
+
 - CLIs
+
 - APIs
+
 - Configuration paradigms
+
 - Management interfaces
 
 !!! warning "The Turning Point"
@@ -146,8 +170,11 @@ Server_C:
 ```
 
 **The Risk:**
+
 - Before deleting Server_A, I needed to find everywhere it was used (security rules, NAT rules, security profiles, etc.)
+
 - Replace Server_A with Server_B in all dependencies
+
 - Only then safely delete Server_A
 
 **Manual Process:** Hours per firewall, error-prone, mind-numbing.
@@ -155,21 +182,34 @@ Server_C:
 #### The Automation Solution
 
 **Step 1: Learn the API with Postman**
+
 - Authenticate to the firewall API
+
 - GET all objects
+
 - Replace an object in its dependencies
+
 - DELETE an object
+
+---
 
 **Step 2: Build a Python Script**
 
 With a colleague, we built our first Python automation script in **one week** with almost zero prior Python or REST API knowledge (though we knew C and Java from school).
 
 **The script:**
+
 1. Retrieves all duplicate objects
+
 2. Lets you choose which object to keep
+
 3. Replaces all references to duplicates with the keeper
+
 4. Verifies the object to delete has no dependencies
+
 5. Deletes the duplicate object
+
+---
 
 **Result:** What took hours manually now took minutes. We were hooked.
 
@@ -184,15 +224,27 @@ With a colleague, we built our first Python automation script in **one week** wi
 
 In March 2020, I joined **Cisco's EMEAR Graduate Program** in Cracow, Poland - an intensive 6-month training program that happens twice a year (March and September).
 
+---
+
 **First 3 Months: Technical & Soft Skills Training**
+
 - Networking fundamentals: CCNA and CCNP certifications
+
 - Soft skills development: stress management, customer communication, presentation skills
+
 - Building a strong technical foundation
 
+---
+
 **Last 3 Months: TAC (Technical Assistance Center)**
+
 - Hands-on experience in Cisco's Technical Access Support
+
 - Real-world troubleshooting and customer support
+
 - Learning to handle complex technical issues under pressure
+
+---
 
 This program transformed me from an engineer into a consultant, teaching me not just technical skills but how to effectively communicate and deliver value to customers.
 
@@ -203,31 +255,47 @@ This program transformed me from an engineer into a consultant, teaching me not 
 Since September 2020, I've been a **Network Consulting Engineer** in France, where I joined the **Consulting Service Provider teams**. This is where everything came together.
 
 **My Role:**
+
 - **Drive network automation** for Service Provider customers
+
 - Design and implement automation solutions for large-scale networks
+
 - Build web applications and orchestration tools for network deployment
 
 #### Technologies I Specialize In Today
 
 **Service Provider Networks:**
+
 Working mainly on **Backbone and Edge networks** with:
-- **Cisco IOS-XR**
-- **Nokia SROS**
-- **Huawei**
+
+| Platform | Description |
+|----------|-------------|
+| **Cisco IOS-XR** | Core routing platform |
+| **Nokia SROS** | Service router OS |
+| **Huawei** | Multi-vendor environments |
+
+---
 
 **Datacenter** (less frequent, but still present):
-- Fabric IP VXLAN (NX-OS + ACI) for datacenter environments
+
+| Technology | Use Case |
+|------------|----------|
+| Fabric IP VXLAN | NX-OS + ACI for datacenter environments |
+
+---
 
 **Automation & Development Stack:**
 
 The most important focus today is the creation of **web applications** and **NSO services** to deploy infrastructure and services across Service Provider networks.
 
-- **Languages:** Python
-- **Web Frameworks:** Django, FastAPI (for building automation web applications)
-- **Network Orchestration:** Cisco NSO (for service deployment across SP networks)
-- **CI/CD:** GitLab pipelines for automated testing and deployment
-- **Configuration Management:** Ansible
-- **AI-Assisted Development:** GitHub Copilot (since 2024)
+| Category | Tools |
+|----------|-------|
+| **Languages** | Python |
+| **Web Frameworks** | Django, FastAPI |
+| **Network Orchestration** | Cisco NSO |
+| **CI/CD** | GitLab pipelines |
+| **Configuration Management** | Ansible |
+| **AI-Assisted Development** | GitHub Copilot (since 2024) |
 
 **Why This Matters:**
 Service Provider networks operate at massive scale. My work focuses on building complete automation solutions - from web interfaces that operators use, to NSO services that orchestrate configuration across thousands of devices. This requires combining software development skills (Django/FastAPI) with deep networking knowledge (IOS-XR, SROS, Huawei) and orchestration expertise (NSO).
@@ -250,13 +318,21 @@ Service Provider networks operate at massive scale. My work focuses on building 
 From February 2022 to March 2023, I returned to **ESIGELEC** as a **Guest Lecturer**, teaching a 20-hour module on network security (CERT certification track).
 
 **What I Taught:**
+
 - Network security fundamentals
+
 - Modern automation approaches
+
 - How to think about security in automated environments
 
+---
+
 **What I Learned:**
+
 - Teaching forces you to truly understand your subject
+
 - The next generation is hungry for automation knowledge
+
 - My journey from student to teacher completed a circle
 
 ---
@@ -290,8 +366,11 @@ I've used VBA, Postman, Python, Ansible, NSO, Docker... The specific tool matter
 ## What's Next?
 
 This blog will dive deeper into:
+
 - **From Pre-Sales to Automation Expert** - How sales experience made me a better automator
+
 - **Network Automation Journey** - From scripts to CI/CD pipelines
+
 - **Service Provider Transformation** - Automation at carrier scale
 
 Stay tuned for detailed posts on each chapter of this journey.
