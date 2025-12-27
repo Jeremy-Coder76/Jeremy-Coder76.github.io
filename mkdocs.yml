@@ -8,3 +8,6 @@ nav:
 
 extra_css:
     - css/autumn-theme.css
+
+extra_javascript:
+    - js/table-wrapper.js
