@@ -20,10 +20,11 @@ My name is **Jeremy LE CLEC'H**. I'm a Network Consulting Engineer at Cisco, spe
 But I didn't start here. My journey began in 2015 as a pre-sales engineer with no knowledge of network automation, programming, or even REST APIs. This blog chronicles my transformation from a sales engineer creating proposals in Word to a network developer building CI/CD pipelines for Service Provider infrastructures.
 
 **Current Focus:**
-- Datacenter: Fabric IP VXLAN, NX-OS, ACI
-- Service Provider: IOS-XR, SROS, BNG
-- Automation: Python, Ansible, NSO, CI/CD
-- Lab Environments: ESXI, CML, ContainerLab, Docker
+- Service Provider: Backbone and edge networks (IOS-XR, SROS, Huawei)
+- Web Development: Django and FastAPI applications for network automation
+- Network Orchestration: Cisco NSO for service deployment across SP networks
+- Automation: Python, CI/CD (GitLab), Ansible, GitHub Copilot
+- Datacenter: Fabric IP VXLAN, NX-OS, ACI (occasional projects)
 
 [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/jeremleclech.svg?style=social&label=Follow%20%40jeremleclech)](https://twitter.com/jeremleclech)
 
@@ -184,37 +185,37 @@ This program transformed me from an engineer into a consultant, teaching me not 
 
 ### Cisco France: Technical Leadership & Service Provider Automation (Sep 2020-Present)
 
-Since September 2020, I've been a **Network Consulting Engineer** in France, and this is where everything came together.
+Since September 2020, I've been a **Network Consulting Engineer** in France, where I joined the **Consulting Service Provider teams**. This is where everything came together.
 
 **My Role:**
-- **Empower Service Providers** to optimize network architecture and deployment
-- **Craft training programs** to elevate client teams
-- **Technical leader** of small groups pioneering breakthrough network solutions
-- **Drive transformative change** in network architecture
+- **Drive network automation** for Service Provider customers
+- Design and implement automation solutions for large-scale networks
+- Build web applications and orchestration tools for network deployment
 
 #### Technologies I Specialize In Today
 
-**Datacenter:**
+**Service Provider Networks:**
+Working mainly on **Backbone and Edge networks** with:
+- **Cisco IOS-XR**
+- **Nokia SROS**
+- **Huawei**
+
+**Datacenter** (less frequent, but still present):
 - Fabric IP VXLAN (NX-OS + ACI) for datacenter environments
-- Network automation for large-scale deployments
 
-**Service Provider:**
-- IOS-XR (Cisco)
-- SROS (Nokia)
-- BNG (Broadband Network Gateway)
+**Automation & Development Stack:**
 
-**Automation Stack:**
+The most important focus today is the creation of **web applications** and **NSO services** to deploy infrastructure and services across Service Provider networks.
+
 - **Languages:** Python
-- **Frameworks:** Ansible, Cisco NSO
-- **CI/CD:** Automated testing and deployment pipelines
-- **Lab Infrastructure:** ESXI, CML, ContainerLab, Docker
+- **Web Frameworks:** Django, FastAPI (for building automation web applications)
+- **Network Orchestration:** Cisco NSO (for service deployment across SP networks)
+- **CI/CD:** GitLab pipelines for automated testing and deployment
+- **Configuration Management:** Ansible
+- **AI-Assisted Development:** GitHub Copilot (since 2024)
 
 **Why This Matters:**
-Service Provider networks operate at massive scale. Manual configuration is not just inefficient - it's impossible. Automation is the only way to:
-- Deploy configurations consistently across thousands of devices
-- Test changes before production
-- Recover from failures quickly
-- Meet customer SLAs
+Service Provider networks operate at massive scale. My work focuses on building complete automation solutions - from web interfaces that operators use, to NSO services that orchestrate configuration across thousands of devices. This requires combining software development skills (Django/FastAPI) with deep networking knowledge (IOS-XR, SROS, Huawei) and orchestration expertise (NSO).
 
 #### The Evolution: From Scripts to Systems
 
@@ -222,7 +223,8 @@ My automation journey evolved:
 1. **2018:** Single-purpose Python scripts (firewall cleanup)
 2. **2019-2020:** Reusable functions and modules
 3. **2021-2022:** Ansible playbooks for multi-device orchestration
-4. **2023-Present:** CI/CD pipelines with automated testing, NSO for service orchestration
+4. **2023:** CI/CD pipelines with automated testing, NSO for service orchestration
+5. **2024-Present:** Full-stack automation solutions - Django/FastAPI web applications integrated with NSO for complete SP network automation. GitHub Copilot accelerating development.
 
 **Each layer built on the previous one.**
 
