@@ -67,7 +67,7 @@ But I didn't start here. My journey began in 2015 as a pre-sales engineer with n
 ## Chapter 1: The Sales Engineer Who Automated (2015-2018)
 
 !!! tip "📖 Read the Full Story"
-    [**Post 1.1: The Sales Engineer Who Automated Himself**](post-1-1-sales-engineer-automated.md) - A detailed account of my journey from manual RFP processing to building VBA automation solutions. Discover how frustration with repetitive tasks led to my first automation breakthrough.
+    [**Post 1.1: The Sales Engineer Who Discovered Automation**](post-1-1-sales-engineer-automated.md) - A detailed account of my journey from manual RFP processing to building VBA automation solutions. Discover how frustration with repetitive tasks led to my first automation breakthrough.
 
 ### Orange Business Services: Where It All Began
 

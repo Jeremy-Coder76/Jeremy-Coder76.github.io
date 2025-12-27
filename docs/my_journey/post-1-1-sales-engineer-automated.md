@@ -1,4 +1,4 @@
-# The Sales Engineer Who Automated Himself
+# The Sales Engineer Who Discovered Automation
 
 *Part 1 of the "From Sales to Code" series*
 
