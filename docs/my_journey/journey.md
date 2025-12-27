@@ -41,7 +41,7 @@ But I didn't start here. My journey began in 2015 as a pre-sales engineer with n
 | 2015-2018 | Pre-Sales Engineer | Orange Business Services | Customer needs, VBA automation |
 | Jun-Sep 2017 | Virtualization Engineer | Orange Polska | ONAP, Python, Netconf |
 | 2018-2020 | Network & Security Engineer | Nomios | Multi-vendor security, **First real automation** |
-| Mar-Sep 2020 | Associate Consulting Engineer | Cisco (Poland) | Consulting mindset |
+| Mar-Sep 2020 | Graduate Program (CCNA/CCNP + TAC) | Cisco (Poland) | Technical foundation & customer support |
 | Sep 2020-Present | Network Consulting Engineer | Cisco (France) | Service Provider automation at scale |
 | Feb 2022-Mar 2023 | Guest Lecturer | ESIGELEC | Teaching network security |
 
@@ -74,15 +74,15 @@ During my studies, I did a 4-month mission at **Orange Polska** in Warsaw as a V
 - Netconf protocol
 - Yang models and JSON formats
 
-**Key Insight:** Network automation was becoming critical for telecom operators. I saw the future, and it was automated.
+**Key Insight:** I saw that automation would be implemented in the future, and that I would like to be part of it.
 
 ### Graduation & Decision (2018)
 
-After graduating from ESIGELEC with an engineering degree in IT and Networks, I had a choice:
+After graduating from ESIGELEC with an Engineering degree of business in IT and Network, I had a choice:
 - Stay in pre-sales (comfortable, good pay)
 - Move to build & run (hands-on, technical)
 
-**I chose the technical path.** I wanted to build networks, not just sell them.
+**I chose the technical path.**
 
 ---
 
@@ -90,7 +90,7 @@ After graduating from ESIGELEC with an engineering degree in IT and Networks, I 
 
 ### Nomios: Multi-Vendor Security Reality
 
-Joining **Nomios** as a **Network & Security Engineer** in September 2018 was a baptism by fire.
+Joining **Nomios** as a **Network & Security Engineer** in September 2018 was a major challenge. This was my first hands-on job, working directly in front of customers on a daily basis while learning security technologies. During my time at Nomios, I worked with over 30 different customers.
 
 **Technologies I Managed:**
 - **Firewalls:** Palo Alto (PCNSE certified), Fortinet
@@ -108,7 +108,7 @@ Joining **Nomios** as a **Network & Security Engineer** in September 2018 was a 
 
 ### My First Real Automation Project
 
-When I arrived at Nomios in 2018, REST APIs on network devices were just becoming mainstream, but almost nobody was using them.
+When I arrived at Nomios in 2018, REST APIs on network devices were just becoming mainstream, but almost nobody was using them. This would be my first network automation project on production devices for a customer - unlike ONAP at Orange Polska, which was still theoretical and in R&D, not yet in production.
 
 I discovered **Postman** - a fantastic graphical tool to explore APIs without coding.
 
@@ -164,12 +164,21 @@ With a colleague, we built our first Python automation script in **one week** wi
 
 ## Chapter 3: The Cisco Era - Automation at Scale (2020-Present)
 
-### Cisco Poland: The Consulting Mindset (Mar-Sep 2020)
+### Cisco Graduate Program: Foundation Building (Mar-Sep 2020)
 
-In March 2020, I joined **Cisco** as an **Associate Consulting Engineer** in Cracow, Poland. This was a short but intense period where I learned:
-- How to think like a consultant, not just an engineer
-- Customer-facing communication
-- Architecture design thinking
+In March 2020, I joined **Cisco's EMEAR Graduate Program** in Cracow, Poland - an intensive 6-month training program that happens twice a year (March and September).
+
+**First 3 Months: Technical & Soft Skills Training**
+- Networking fundamentals: CCNA and CCNP certifications
+- Soft skills development: stress management, customer communication, presentation skills
+- Building a strong technical foundation
+
+**Last 3 Months: TAC (Technical Assistance Center)**
+- Hands-on experience in Cisco's Technical Access Support
+- Real-world troubleshooting and customer support
+- Learning to handle complex technical issues under pressure
+
+This program transformed me from an engineer into a consultant, teaching me not just technical skills but how to effectively communicate and deliver value to customers.
 
 **Then came the move to France...**
 
