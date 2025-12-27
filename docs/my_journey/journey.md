@@ -2,6 +2,16 @@
 
 > *"Technical learning and experience is a journey of successive experiences - each role building on the last"*
 
+!!! info "What You'll Learn from This Journey"
+    This is the story of how I went from a **pre-sales engineer with zero coding experience** to a **Network Consulting Engineer building CI/CD pipelines** for Service Provider networks. You'll discover:
+
+    - How to start network automation **without being a programming expert**
+    - Real-world examples of automation solving actual problems
+    - The step-by-step evolution from simple scripts to enterprise solutions
+    - Career lessons from 10 years in network engineering
+
+    **Reading time:** 15-20 minutes
+
 ## Table of Contents
 - [About Me](#about-me)
 - [The Journey Overview](#the-journey-overview)
@@ -32,7 +42,8 @@ But I didn't start here. My journey began in 2015 as a pre-sales engineer with n
 
 ## The Journey Overview
 
-**The Core Message:** You don't need to be a programming expert to start with network automation. Technical mastery comes through successive real-world experiences, each building on the last.
+!!! info "Core Message"
+    **You don't need to be a programming expert to start with network automation.** Technical mastery comes through successive real-world experiences, each building on the last.
 
 ### Timeline at a Glance
 
@@ -83,7 +94,8 @@ After graduating from ESIGELEC with an Engineering degree of business in IT and 
 - Stay in pre-sales (comfortable, good pay)
 - Move to build & run (hands-on, technical)
 
-**I chose the technical path.**
+!!! warning "The Career-Defining Decision"
+    **I chose the technical path.** This decision to move from comfortable pre-sales to hands-on technical work was the foundation for everything that followed.
 
 ---
 
@@ -105,7 +117,8 @@ Joining **Nomios** as a **Network & Security Engineer** in September 2018 was a 
 - Configuration paradigms
 - Management interfaces
 
-**This is where automation became essential, not optional.**
+!!! warning "The Turning Point"
+    **This is where automation became essential, not optional.** Managing 30+ customers with different vendors made manual configuration unsustainable.
 
 ### My First Real Automation Project
 
@@ -113,7 +126,8 @@ When I arrived at Nomios in 2018, REST APIs on network devices were just becomin
 
 I discovered **Postman** - a fantastic graphical tool to explore APIs without coding.
 
-> **BTW:** If you're starting with APIs, [Postman](https://www.postman.com/) is your best friend.
+!!! tip "Pro Tip for Beginners"
+    If you're starting with APIs, [Postman](https://www.postman.com/) is your best friend. It lets you explore APIs graphically without writing code first!
 
 #### The Duplicate Objects Problem
 
@@ -159,7 +173,8 @@ With a colleague, we built our first Python automation script in **one week** wi
 
 **Result:** What took hours manually now took minutes. We were hooked.
 
-**Key Lesson:** *You don't need to be an expert to start. We built a production-ready script in a week as complete beginners.*
+!!! success "Key Lesson: Start Before You're Ready"
+    **You don't need to be an expert to start.** We built a production-ready script in **one week** as complete beginners with zero Python experience. The best time to start automating is NOW.
 
 ---
 
@@ -219,14 +234,16 @@ Service Provider networks operate at massive scale. My work focuses on building 
 
 #### The Evolution: From Scripts to Systems
 
-My automation journey evolved:
-1. **2018:** Single-purpose Python scripts (firewall cleanup)
-2. **2019-2020:** Reusable functions and modules
-3. **2021-2022:** Ansible playbooks for multi-device orchestration
-4. **2023:** CI/CD pipelines with automated testing, NSO for service orchestration
-5. **2024-Present:** Full-stack automation solutions - Django/FastAPI web applications integrated with NSO for complete SP network automation. GitHub Copilot accelerating development.
+!!! note "The 5-Year Automation Evolution"
+    My automation journey evolved step by step:
 
-**Each layer built on the previous one.**
+    1. **2018:** Single-purpose Python scripts (firewall cleanup)
+    2. **2019-2020:** Reusable functions and modules
+    3. **2021-2022:** Ansible playbooks for multi-device orchestration
+    4. **2023:** CI/CD pipelines with automated testing, NSO for service orchestration
+    5. **2024-Present:** Full-stack automation solutions - Django/FastAPI web applications integrated with NSO for complete SP network automation. GitHub Copilot accelerating development.
+
+    **Each layer built on the previous one.** You don't jump from scripts to CI/CD overnight - it's a gradual progression.
 
 ### Full Circle: Teaching the Next Generation (2022-2023)
 
@@ -246,7 +263,8 @@ From February 2022 to March 2023, I returned to **ESIGELEC** as a **Guest Lectur
 
 ## Key Takeaways
 
-After 10 years in the industry, here's what I've learned:
+!!! success "10 Years of Learning - What Really Matters"
+    After 10 years in the industry, here's what I've learned:
 
 ### 1. **You Don't Need Permission to Start**
 I wasn't hired to automate at Orange. I just started because it solved my problem (VBA for proposals). That curiosity led everywhere else.
@@ -282,13 +300,15 @@ Stay tuned for detailed posts on each chapter of this journey.
 
 ## Connect With Me
 
-I'm always happy to chat with industry colleagues, aspiring network engineers, or anyone curious about network automation.
+!!! note "Let's Connect!"
+    I'm always happy to chat with industry colleagues, aspiring network engineers, or anyone curious about network automation.
 
-**Twitter:** [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/jeremleclech.svg?style=social&label=Follow%20%40jeremleclech)](https://twitter.com/jeremleclech)
+    **Find me on:**
 
-**LinkedIn:** [Jeremy LE CLEC'H](https://www.linkedin.com/in/jeremyleclech)
+    - **Twitter:** [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/jeremleclech.svg?style=social&label=Follow%20%40jeremleclech)](https://twitter.com/jeremleclech)
+    - **LinkedIn:** [Jeremy LE CLEC'H](https://www.linkedin.com/in/jeremyleclech)
 
-**Questions? Thoughts? Reach out!**
+    **Questions? Thoughts? Reach out!** Whether you're just starting your automation journey or looking to level up, I'd love to hear from you.
 
 ---
 

@@ -141,6 +141,17 @@
 <blockquote>
 <p><em>"Technical learning and experience is a journey of successive experiences - each role building on the last"</em></p>
 </blockquote>
+<div class="admonition info">
+<p class="admonition-title">What You'll Learn from This Journey</p>
+<p>This is the story of how I went from a <strong>pre-sales engineer with zero coding experience</strong> to a <strong>Network Consulting Engineer building CI/CD pipelines</strong> for Service Provider networks. You'll discover:</p>
+<ul>
+<li>How to start network automation <strong>without being a programming expert</strong></li>
+<li>Real-world examples of automation solving actual problems</li>
+<li>The step-by-step evolution from simple scripts to enterprise solutions</li>
+<li>Career lessons from 10 years in network engineering</li>
+</ul>
+<p><strong>Reading time:</strong> 15-20 minutes</p>
+</div>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
 <li><a href="#about-me">About Me</a></li>
@@ -164,7 +175,10 @@
 <p><a href="https://twitter.com/jeremleclech"><img alt="Twitter URL" src="https://img.shields.io/twitter/url/https/twitter.com/jeremleclech.svg?style=social&amp;label=Follow%20%40jeremleclech" /></a></p>
 <hr />
 <h2 id="the-journey-overview">The Journey Overview</h2>
-<p><strong>The Core Message:</strong> You don't need to be a programming expert to start with network automation. Technical mastery comes through successive real-world experiences, each building on the last.</p>
+<div class="admonition info">
+<p class="admonition-title">Core Message</p>
+<p><strong>You don't need to be a programming expert to start with network automation.</strong> Technical mastery comes through successive real-world experiences, each building on the last.</p>
+</div>
 <h3 id="timeline-at-a-glance">Timeline at a Glance</h3>
 <table>
 <thead>
@@ -244,7 +258,10 @@
 <p>After graduating from ESIGELEC with an Engineering degree of business in IT and Network, I had a choice:
 - Stay in pre-sales (comfortable, good pay)
 - Move to build &amp; run (hands-on, technical)</p>
-<p><strong>I chose the technical path.</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">The Career-Defining Decision</p>
+<p><strong>I chose the technical path.</strong> This decision to move from comfortable pre-sales to hands-on technical work was the foundation for everything that followed.</p>
+</div>
 <hr />
 <h2 id="chapter-2-into-the-network-trenches-2018-2020">Chapter 2: Into the Network Trenches (2018-2020)</h2>
 <h3 id="nomios-multi-vendor-security-reality">Nomios: Multi-Vendor Security Reality</h3>
@@ -259,16 +276,20 @@
 - APIs
 - Configuration paradigms
 - Management interfaces</p>
-<p><strong>This is where automation became essential, not optional.</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">The Turning Point</p>
+<p><strong>This is where automation became essential, not optional.</strong> Managing 30+ customers with different vendors made manual configuration unsustainable.</p>
+</div>
 <h3 id="my-first-real-automation-project">My First Real Automation Project</h3>
 <p>When I arrived at Nomios in 2018, REST APIs on network devices were just becoming mainstream, but almost nobody was using them. This would be my first network automation project on production devices for a customer - unlike ONAP at Orange Polska, which was still theoretical and in R&amp;D, not yet in production.</p>
 <p>I discovered <strong>Postman</strong> - a fantastic graphical tool to explore APIs without coding.</p>
-<blockquote>
-<p><strong>BTW:</strong> If you're starting with APIs, <a href="https://www.postman.com/">Postman</a> is your best friend.</p>
-</blockquote>
+<div class="admonition tip">
+<p class="admonition-title">Pro Tip for Beginners</p>
+<p>If you're starting with APIs, <a href="https://www.postman.com/">Postman</a> is your best friend. It lets you explore APIs graphically without writing code first!</p>
+</div>
 <h4 id="the-duplicate-objects-problem">The Duplicate Objects Problem</h4>
 <p><strong>The Challenge:</strong> Our firewalls had hundreds of duplicate objects with the same IP addresses but different names:</p>
-<pre><code>Example:
+<pre class="highlight"><code>Example:
 Server_A:
   - ip_address: 10.10.0.1
 
@@ -276,8 +297,7 @@ Server_B:
   - ip_address: 10.10.0.1
 
 Server_C:
-  - ip_address: 10.10.0.2
-</code></pre>
+  - ip_address: 10.10.0.2</code></pre>
 <p><strong>The Risk:</strong>
 - Before deleting Server_A, I needed to find everywhere it was used (security rules, NAT rules, security profiles, etc.)
 - Replace Server_A with Server_B in all dependencies
@@ -298,7 +318,10 @@ Server_C:
 4. Verifies the object to delete has no dependencies
 5. Deletes the duplicate object</p>
 <p><strong>Result:</strong> What took hours manually now took minutes. We were hooked.</p>
-<p><strong>Key Lesson:</strong> <em>You don't need to be an expert to start. We built a production-ready script in a week as complete beginners.</em></p>
+<div class="admonition success">
+<p class="admonition-title">Key Lesson: Start Before You're Ready</p>
+<p><strong>You don't need to be an expert to start.</strong> We built a production-ready script in <strong>one week</strong> as complete beginners with zero Python experience. The best time to start automating is NOW.</p>
+</div>
 <hr />
 <h2 id="chapter-3-the-cisco-era-automation-at-scale-2020-present">Chapter 3: The Cisco Era - Automation at Scale (2020-Present)</h2>
 <h3 id="cisco-graduate-program-foundation-building-mar-sep-2020">Cisco Graduate Program: Foundation Building (Mar-Sep 2020)</h3>
@@ -340,13 +363,18 @@ Working mainly on <strong>Backbone and Edge networks</strong> with:
 <p><strong>Why This Matters:</strong>
 Service Provider networks operate at massive scale. My work focuses on building complete automation solutions - from web interfaces that operators use, to NSO services that orchestrate configuration across thousands of devices. This requires combining software development skills (Django/FastAPI) with deep networking knowledge (IOS-XR, SROS, Huawei) and orchestration expertise (NSO).</p>
 <h4 id="the-evolution-from-scripts-to-systems">The Evolution: From Scripts to Systems</h4>
-<p>My automation journey evolved:
-1. <strong>2018:</strong> Single-purpose Python scripts (firewall cleanup)
-2. <strong>2019-2020:</strong> Reusable functions and modules
-3. <strong>2021-2022:</strong> Ansible playbooks for multi-device orchestration
-4. <strong>2023:</strong> CI/CD pipelines with automated testing, NSO for service orchestration
-5. <strong>2024-Present:</strong> Full-stack automation solutions - Django/FastAPI web applications integrated with NSO for complete SP network automation. GitHub Copilot accelerating development.</p>
-<p><strong>Each layer built on the previous one.</strong></p>
+<div class="admonition note">
+<p class="admonition-title">The 5-Year Automation Evolution</p>
+<p>My automation journey evolved step by step:</p>
+<ol>
+<li><strong>2018:</strong> Single-purpose Python scripts (firewall cleanup)</li>
+<li><strong>2019-2020:</strong> Reusable functions and modules</li>
+<li><strong>2021-2022:</strong> Ansible playbooks for multi-device orchestration</li>
+<li><strong>2023:</strong> CI/CD pipelines with automated testing, NSO for service orchestration</li>
+<li><strong>2024-Present:</strong> Full-stack automation solutions - Django/FastAPI web applications integrated with NSO for complete SP network automation. GitHub Copilot accelerating development.</li>
+</ol>
+<p><strong>Each layer built on the previous one.</strong> You don't jump from scripts to CI/CD overnight - it's a gradual progression.</p>
+</div>
 <h3 id="full-circle-teaching-the-next-generation-2022-2023">Full Circle: Teaching the Next Generation (2022-2023)</h3>
 <p>From February 2022 to March 2023, I returned to <strong>ESIGELEC</strong> as a <strong>Guest Lecturer</strong>, teaching a 20-hour module on network security (CERT certification track).</p>
 <p><strong>What I Taught:</strong>
@@ -359,7 +387,10 @@ Service Provider networks operate at massive scale. My work focuses on building 
 - My journey from student to teacher completed a circle</p>
 <hr />
 <h2 id="key-takeaways">Key Takeaways</h2>
+<div class="admonition success">
+<p class="admonition-title">10 Years of Learning - What Really Matters</p>
 <p>After 10 years in the industry, here's what I've learned:</p>
+</div>
 <h3 id="1-you-dont-need-permission-to-start">1. <strong>You Don't Need Permission to Start</strong></h3>
 <p>I wasn't hired to automate at Orange. I just started because it solved my problem (VBA for proposals). That curiosity led everywhere else.</p>
 <h3 id="2-each-experience-builds-on-the-last">2. <strong>Each Experience Builds on the Last</strong></h3>
@@ -384,10 +415,16 @@ Service Provider networks operate at massive scale. My work focuses on building 
 <p>Stay tuned for detailed posts on each chapter of this journey.</p>
 <hr />
 <h2 id="connect-with-me">Connect With Me</h2>
+<div class="admonition note">
+<p class="admonition-title">Let's Connect!</p>
 <p>I'm always happy to chat with industry colleagues, aspiring network engineers, or anyone curious about network automation.</p>
-<p><strong>Twitter:</strong> <a href="https://twitter.com/jeremleclech"><img alt="Twitter URL" src="https://img.shields.io/twitter/url/https/twitter.com/jeremleclech.svg?style=social&amp;label=Follow%20%40jeremleclech" /></a></p>
-<p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jeremyleclech">Jeremy LE CLEC'H</a></p>
-<p><strong>Questions? Thoughts? Reach out!</strong></p>
+<p><strong>Find me on:</strong></p>
+<ul>
+<li><strong>Twitter:</strong> <a href="https://twitter.com/jeremleclech"><img alt="Twitter URL" src="https://img.shields.io/twitter/url/https/twitter.com/jeremleclech.svg?style=social&amp;label=Follow%20%40jeremleclech" /></a></li>
+<li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jeremyleclech">Jeremy LE CLEC'H</a></li>
+</ul>
+<p><strong>Questions? Thoughts? Reach out!</strong> Whether you're just starting your automation journey or looking to level up, I'd love to hear from you.</p>
+</div>
 <hr />
 <p><em>Last Updated: December 2024</em> </p></div>
             </div>
