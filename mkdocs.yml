@@ -1,13 +1,91 @@
 site_name: jleclech blog
-nav:
-    - Home: 'index.md'
-    - 'my_journey':
-        - 'Journey': 'my_journey/journey.md'
-    - About:
-        - 'About': 'about.md'
+site_description: Personal blog and journey documentation
+site_author: Jeremy LE CLEC'H
 
+# Theme configuration - Material is mobile-first and beautiful
+theme:
+  name: material
+  custom_dir: docs/overrides
+  palette:
+    # Light mode with autumn colors
+    - scheme: default
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    # Dark mode with warm autumn tones
+    - scheme: slate
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+  font:
+    text: Merriweather
+    code: Fira Code
+
+  features:
+    # Navigation features for better mobile UX
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+
+  icon:
+    logo: material/leaf-maple
+
+  # Custom colors defined in CSS
+  language: en
+
+# Navigation structure
+nav:
+  - Home: index.md
+  - My Journey:
+    - Journey: my_journey/journey.md
+  - About: about.md
+
+# Plugins
+plugins:
+  - search
+
+# Markdown extensions for richer content
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# Custom CSS and JS
 extra_css:
-    - css/autumn-theme.css
+  - css/autumn-theme.css
 
 extra_javascript:
-    - js/table-wrapper.js
+  - js/table-wrapper.js
+
+# Extra configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Jeremy-Coder76
