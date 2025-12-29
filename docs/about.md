@@ -107,4 +107,4 @@ I'm always happy to chat with fellow network engineers, automation enthusiasts, 
 
 ---
 
-*Last Updated: December 2024*
+*Last Updated: December 2025*
