@@ -30,9 +30,13 @@ That thought changed everything.
 Let me back up a bit. In 2015, I started my apprenticeship at Orange Business Services while completing my engineering degree at ESIGELEC (École Supérieure d'Ingénieurs en Génie Électrique). I was a Pre-Sales Engineer—the person who sits between the sales team and the technical team, translating customer needs into network architectures and proposals.
 
 The job was fantastic in many ways:
+
 - Meeting clients and understanding their business challenges
+
 - Designing custom network solutions (MPLS, SD-WAN, security architectures)
+
 - Creating technical proposals and commercial offers
+
 - Presenting solutions to C-level executives
 
 The pay was good. The work was interesting. I was learning about customer needs, business requirements, and how to communicate technical concepts to non-technical audiences.
@@ -66,8 +70,11 @@ For single-site customers, this is manageable. But for enterprise customers with
 **A typical customer with 100+ sites would consume an enormous amount of time.** And this wasn't optional—it was the **first mandatory step** for every multi-site proposal, RFP or not.
 
 The frustration wasn't just the time. It was the errors:
+
 - Copy the wrong address? You've checked eligibility for the wrong location.
+
 - Miss a site? Your proposal is incomplete and won't meet the RFP requirements.
+
 - Transpose bandwidth numbers? You might promise something you can't deliver.
 
 **I was being a human copy-paste machine. And I hated it.**
@@ -105,9 +112,13 @@ That's when I discovered **VBA (Visual Basic for Applications)**—a programming
 I had zero VBA experience. But I had desperation, curiosity, and access to Google.
 
 I started learning:
+
 - **First:** Learned how to extract text from PDFs using VBA libraries
+
 - **Then:** Figured out how to parse addresses and bandwidth from unstructured PDF data
+
 - **Next:** Automated CSV creation with proper formatting for the bandwidth tool
+
 - **Finally:** Built the complete workflow: PDF → CSV → Import → Export → Comparison
 
 Was the code elegant? Absolutely not.
@@ -173,11 +184,17 @@ The bandwidth eligibility automation wasn't just about saving time—it was abou
 Looking back, that bandwidth eligibility automation wasn't just about saving time. I was building foundational automation skills without realizing it:
 
 - **Data Extraction:** Parsing unstructured data from PDFs (addresses, bandwidth values)
+
 - **Pattern Recognition:** Identifying what's repetitive vs. what's truly custom
+
 - **Data Transformation:** Converting PDF data → structured CSV → analysis results
+
 - **Integration:** Making different tools work together (PDF reader → VBA → CSV → bandwidth tool)
+
 - **Error Handling:** What happens when addresses are malformed or data is missing?
+
 - **User Experience:** Making the tool usable by colleagues, not just me
+
 - **Business Impact:** Understanding that automation errors could cost real money (wrong bandwidth = wrong pricing)
 
 But more importantly, I was developing **the automation mindset:**
@@ -189,9 +206,13 @@ But more importantly, I was developing **the automation mindset:**
 By 2018, I had a choice to make.
 
 I could stay in pre-sales:
+
 - Good salary
+
 - Client-facing role
+
 - Business development opportunities
+
 - Career path was clear
 
 Or I could move to build & run—actually implementing and operating networks rather than just designing proposals.
@@ -221,8 +242,11 @@ I just... started. Because I was frustrated with manual work and curious about s
 ### 2. Start with the Pain Points
 
 Don't try to automate everything. Start with what hurts:
+
 - What takes the most time?
+
 - What's most error-prone?
+
 - What makes you stay late at the office?
 
 My pain point was bandwidth eligibility checking for multi-site customers. Yours might be configuration backups, or log analysis, or compliance reporting.
@@ -252,9 +276,13 @@ Each one was easier than the last. The concepts transfer. Loops are loops. Funct
 VBA was just the tool. The real skill was asking: **"Why am I doing this manually?"**
 
 That question works everywhere:
+
 - Pre-sales proposals → VBA
+
 - Network configurations → Python
+
 - Multi-device orchestration → Ansible
+
 - Service deployment → NSO
 
 **The tools change. The mindset doesn't.**
@@ -270,14 +298,21 @@ Because the best automation engineers aren't the ones who started with automatio
 They're the ones who asked: "Why am I doing this manually?"
 
 You don't need:
+
 - An automation role
+
 - Years of programming experience
+
 - Formal training in Python or Ansible
+
 - Permission from management
 
 You just need:
+
 - A repetitive task that annoys you
+
 - Curiosity about how to fix it
+
 - Willingness to learn as you go
 
 **That's it.**
@@ -300,12 +335,17 @@ In the next post, I'll share how I went from automating Word documents to writin
 
 ---
 
-## Connect
+## Connect With Me
 
-Questions about getting started with automation? Want to share your own automation story? Reach out—I'm always happy to chat with industry colleagues and aspiring network engineers.
+!!! note "Let's Connect!"
+    I'm always happy to chat with industry colleagues, aspiring network engineers, or anyone curious about network automation.
 
-- **Twitter/X:** [@jeremleclech](https://twitter.com/jeremleclech)
-- **LinkedIn:** [Jeremy LE CLEC'H](https://www.linkedin.com/in/jeremyleclech)
+    **Find me on:**
+
+    - **Twitter:** [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/jeremleclech.svg?style=social&label=Follow%20%40jeremleclech)](https://twitter.com/jeremleclech)
+    - **LinkedIn:** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=social&logo=linkedin)](https://www.linkedin.com/in/jeremyleclech)
+
+    **Questions? Thoughts? Reach out!** Whether you're just starting your automation journey or looking to level up, I'd love to hear from you.
 
 *Remember: Every expert was once a beginner who refused to give up.*
 

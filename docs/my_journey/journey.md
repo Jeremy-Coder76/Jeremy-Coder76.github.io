@@ -41,7 +41,7 @@ But I didn't start here. My journey began in 2015 as a pre-sales engineer with n
 
 - Datacenter: Fabric IP VXLAN, NX-OS, ACI (occasional projects)
 
-[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/jeremleclech.svg?style=social&label=Follow%20%40jeremleclech)](https://twitter.com/jeremleclech)
+[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/jeremleclech.svg?style=social&label=Follow%20%40jeremleclech)](https://twitter.com/jeremleclech) [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=social&logo=linkedin)](https://www.linkedin.com/in/jeremyleclech)
 
 ---
 
@@ -147,7 +147,9 @@ During my studies, I did a 4-month mission at **Orange Polska** in Warsaw as a V
 ### Graduation & Decision (2018)
 
 After graduating from ESIGELEC with an Engineering degree of business in IT and Network, I had a choice:
+
 - Stay in pre-sales (comfortable, good pay)
+
 - Move to build & run (hands-on, technical)
 
 !!! warning "The Career-Defining Decision"
@@ -427,10 +429,10 @@ Stay tuned for detailed posts on each chapter of this journey.
     **Find me on:**
 
     - **Twitter:** [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/jeremleclech.svg?style=social&label=Follow%20%40jeremleclech)](https://twitter.com/jeremleclech)
-    - **LinkedIn:** [Jeremy LE CLEC'H](https://www.linkedin.com/in/jeremyleclech)
+    - **LinkedIn:** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=social&logo=linkedin)](https://www.linkedin.com/in/jeremyleclech)
 
     **Questions? Thoughts? Reach out!** Whether you're just starting your automation journey or looking to level up, I'd love to hear from you.
 
 ---
 
-*Last Updated: December 2024* 
+*Last Updated: December 2025* 
