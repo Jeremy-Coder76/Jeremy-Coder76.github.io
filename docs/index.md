@@ -20,13 +20,11 @@
 ---
 
 ```yaml
-# ═══════════════════════════════════════════════════════════════
-#                    jleclech.blog/config.yml
-# ═══════════════════════════════════════════════════════════════
+# jleclech.blog/config.yml
 
 site:
   name: "Jeremy LE CLEC'H"
-  title: "Network Engineer | Automation Enthusiast"
+  title: "Network Engineer"
   version: "2.0.0"
 
 status:
@@ -48,15 +46,15 @@ This is where I document my transformation from traditional network engineering 
 ## Project Structure
 
 ```
-📁 jleclech-blog/
-├── 📁 my_journey/
-│   ├── 📄 journey.md          # The complete story
-│   └── 📄 post-1-1.md         # Automation discovery
-├── 📁 technical/
-│   └── 📄 coming_soon.md      # Deep dives & tutorials
-├── 📁 about/
-│   └── 📄 about.md            # Who am I?
-└── 📄 README.md               # You are here
+jleclech-blog/
+├── my_journey/
+│   ├── journey.md
+│   └── post-1-1.md
+├── technical/
+│   └── coming_soon.md
+├── about/
+│   └── about.md
+└── README.md
 ```
 
 ---
@@ -80,18 +78,14 @@ Thoughts on career pivots, continuous learning, and the mindset shifts required 
 ## Quick Start
 
 ```python
-#!/usr/bin/env python3
 from jleclech_blog import Blog
 
-# Initialize your exploration
 blog = Blog()
 
-# Available methods
-blog.explore_journey()    # Read my story
-blog.view_technical()     # See the code
-blog.about_author()       # Learn about me
+blog.explore_journey()
+blog.view_technical()
+blog.about_author()
 
-# Start here:
 if __name__ == "__main__":
     blog.run()
 ```
@@ -131,14 +125,4 @@ if __name__ == "__main__":
 
 ---
 
-<div style="text-align: center; margin-top: 2rem;">
-
-```
-┌─────────────────────────────────────────────┐
-│  CTRL + ALT + AUTOMATE                      │
-│  ─────────────────────────────────────────  │
-│  Building the future, one script at a time  │
-└─────────────────────────────────────────────┘
-```
-
-</div>
+**CTRL + ALT + AUTOMATE** — Building the future, one script at a time.
