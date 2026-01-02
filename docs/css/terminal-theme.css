@@ -138,6 +138,12 @@ body::before {
         0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
+/* Header inner - ensure proper layout */
+.md-header__inner {
+    display: flex !important;
+    align-items: center !important;
+}
+
 .md-header__title {
     font-family: 'JetBrains Mono', monospace;
     font-weight: 600;
@@ -145,17 +151,32 @@ body::before {
     text-transform: uppercase;
     font-size: 0.9rem;
     color: var(--text-primary) !important;
+    margin-left: 0.5rem;
 }
 
-/* Ensure title topic (the actual text) is visible */
+/* Force the ellipsis container to show content properly */
+.md-header__ellipsis {
+    display: flex !important;
+    align-items: center !important;
+    height: auto !important;
+}
+
+/* Ensure title topic (the actual text) is visible - ALWAYS show first topic (site name) */
 .md-header__title .md-header__topic {
     display: flex !important;
     opacity: 1 !important;
     color: var(--text-primary) !important;
+    position: static !important;
+    transform: none !important;
 }
 
 .md-header__title .md-header__topic:first-child {
     font-weight: 600;
+}
+
+/* Hide the second topic (page title) to keep header clean */
+.md-header__title .md-header__topic + .md-header__topic {
+    display: none !important;
 }
 
 .md-header__title::before {
