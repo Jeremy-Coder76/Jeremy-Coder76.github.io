@@ -1,0 +1,1541 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Personal blog and journey documentation">
+      
+      
+        <meta name="author" content="Jeremy LE CLEC'H">
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Blog Series Plan: From Sales to Code - A Network Automation Journey - jleclech blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/terminal-theme.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#blog-series-plan-from-sales-to-code-a-network-automation-journey" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="jleclech blog" class="md-header__button md-logo" aria-label="jleclech blog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 19V7H4v12zm0-16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-7 14v-2h5v2zm-3.42-4L5.57 9H8.4l3.3 3.3c.39.39.39 1.03 0 1.42L8.42 17H5.59z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            jleclech blog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Blog Series Plan: From Sales to Code - A Network Automation Journey
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../journey/" class="md-tabs__link">
+          
+  
+  
+  My Journey
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="jleclech blog" class="md-nav__button md-logo" aria-label="jleclech blog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 19V7H4v12zm0-16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-7 14v-2h5v2zm-3.42-4L5.57 9H8.4l3.3 3.3c.39.39.39 1.03 0 1.42L8.42 17H5.59z"/></svg>
+
+    </a>
+    jleclech blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    My Journey
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    My Journey
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../journey/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Journey
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../post-1-1-sales-engineer-automated/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Post 1.1 - The Sales Engineer Who Discovered Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#series-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Series Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#professional-journey-timeline-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Professional Journey Timeline (Reference)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-technical-focus-2024-present" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current Technical Focus (2024-Present)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blog-series-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blog Series Structure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Blog Series Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#three-pillars-can-be-3-posts-or-expanded-to-8-10-posts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Three Pillars (Can be 3 posts OR expanded to 8-10 posts)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pillar-1-from-pre-sales-to-automation-expert" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PILLAR 1: "From Pre-Sales to Automation Expert"
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PILLAR 1: &#34;From Pre-Sales to Automation Expert&#34;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#potential-post-breakdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Potential Post Breakdown:
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Potential Post Breakdown:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-11-the-sales-engineer-who-automated-himself" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Post 1.1: "The Sales Engineer Who Automated Himself"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-12-first-steps-from-postman-to-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Post 1.2: "First Steps: From Postman to Python"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pillar-2-network-automation-journey" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PILLAR 2: "Network Automation Journey"
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PILLAR 2: &#34;Network Automation Journey&#34;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#potential-post-breakdown_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Potential Post Breakdown:
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Potential Post Breakdown:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-21-the-cisco-graduate-program-building-foundations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Post 2.1: "The Cisco Graduate Program: Building Foundations"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-22-joining-the-service-provider-world" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Post 2.2: "Joining the Service Provider World"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-23-the-evolution-from-scripts-to-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Post 2.3: "The Evolution: From Scripts to Systems"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pillar-3-service-provider-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PILLAR 3: "Service Provider Transformation"
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PILLAR 3: &#34;Service Provider Transformation&#34;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#potential-post-breakdown_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Potential Post Breakdown:
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Potential Post Breakdown:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-31-building-web-applications-for-network-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Post 3.1: "Building Web Applications for Network Automation"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-32-service-provider-networks-backbone-and-edge-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Post 3.2: "Service Provider Networks: Backbone and Edge Automation"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-33-nso-from-configuration-to-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Post 3.3: "NSO: From Configuration to Services"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-34-github-copilot-and-ai-in-network-automation-2024" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Post 3.4: "GitHub Copilot and AI in Network Automation (2024)"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-themes-across-all-posts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Themes Across All Posts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Themes Across All Posts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-you-dont-need-permission-to-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. You Don't Need Permission to Start
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-each-experience-builds-on-the-last" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Each Experience Builds on the Last
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-start-small-think-big" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Start Small, Think Big
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-learn-in-public-share-the-journey" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Learn in Public, Share the Journey
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-the-tools-change-the-mindset-doesnt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. The Tools Change, The Mindset Doesn't
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#writing-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Writing Guidelines
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Writing Guidelines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tone
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-for-each-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Structure for Each Post
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Depth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#length" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Length
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#call-to-action-standard-across-posts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Call to Action (Standard Across Posts)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seo-keywords-to-include" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SEO Keywords to Include
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#publication-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Publication Strategy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Publication Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-a-comprehensive-3-posts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option A - Comprehensive (3 Posts)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-b-detailed-series-8-10-posts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option B - Detailed Series (8-10 Posts)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions-to-answer-before-writing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Questions to Answer Before Writing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#success-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Success Metrics
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="blog-series-plan-from-sales-to-code-a-network-automation-journey">Blog Series Plan: From Sales to Code - A Network Automation Journey<a class="headerlink" href="#blog-series-plan-from-sales-to-code-a-network-automation-journey" title="Permanent link">&para;</a></h1>
+<h2 id="series-overview">Series Overview<a class="headerlink" href="#series-overview" title="Permanent link">&para;</a></h2>
+<p><strong>Blog Title:</strong> "From Sales to Code: My Network Automation Journey"</p>
+<p><strong>Core Message/Takeaway:</strong></p>
+<blockquote>
+<p>"Technical learning and experience is a journey of successive experiences - each role building on the last"</p>
+</blockquote>
+<p><strong>Target Audience:</strong>
+- Junior network engineers
+- Network professionals interested in automation
+- Anyone transitioning from traditional networking to network automation
+- Engineers curious about career progression in network automation</p>
+<p><strong>Narrative Arc:</strong>
+The journey from a sales engineer with no programming knowledge to a network developer building full-stack automation solutions for Service Provider networks. Each job, each project, each challenge built the foundation for the next level.</p>
+<hr />
+<h2 id="professional-journey-timeline-reference">Professional Journey Timeline (Reference)<a class="headerlink" href="#professional-journey-timeline-reference" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Period</th>
+<th>Role</th>
+<th>Company</th>
+<th>Key Learning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2013-2018</td>
+<td>Engineering Student</td>
+<td>ESIGELEC</td>
+<td>IT &amp; Networks Foundation</td>
+</tr>
+<tr>
+<td>2015-2018</td>
+<td>Pre-Sales Engineer</td>
+<td>Orange Business Services</td>
+<td>Customer needs, VBA automation</td>
+</tr>
+<tr>
+<td>Jun-Sep 2017</td>
+<td>Virtualization Engineer</td>
+<td>Orange Polska</td>
+<td>ONAP, Python, Netconf</td>
+</tr>
+<tr>
+<td>2018-2020</td>
+<td>Network &amp; Security Engineer</td>
+<td>Nomios</td>
+<td>Multi-vendor security, <strong>First real automation</strong></td>
+</tr>
+<tr>
+<td>Mar-Sep 2020</td>
+<td>Graduate Program (CCNA/CCNP + TAC)</td>
+<td>Cisco (Poland)</td>
+<td>Technical foundation &amp; customer support</td>
+</tr>
+<tr>
+<td>Sep 2020-Present</td>
+<td>Network Consulting Engineer</td>
+<td>Cisco (France)</td>
+<td>Service Provider automation at scale</td>
+</tr>
+<tr>
+<td>Feb 2022-Mar 2023</td>
+<td>Guest Lecturer</td>
+<td>ESIGELEC</td>
+<td>Teaching network security</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="current-technical-focus-2024-present">Current Technical Focus (2024-Present)<a class="headerlink" href="#current-technical-focus-2024-present" title="Permanent link">&para;</a></h2>
+<p><strong>Primary Work:</strong>
+- Service Provider: Backbone and edge networks (Cisco IOS-XR, Nokia SROS, Huawei)
+- Web Development: Django and FastAPI applications for network automation
+- Network Orchestration: Cisco NSO for service deployment across SP networks
+- Automation: Python, CI/CD (GitLab), Ansible, GitHub Copilot (since 2024)
+- Datacenter: Fabric IP VXLAN, NX-OS, ACI (occasional projects)</p>
+<p><strong>Role:</strong> Network Consulting Engineer at Cisco France, Consulting Service Provider teams
+<strong>Main Responsibility:</strong> Drive network automation for Service Provider customers</p>
+<hr />
+<h2 id="blog-series-structure">Blog Series Structure<a class="headerlink" href="#blog-series-structure" title="Permanent link">&para;</a></h2>
+<h3 id="three-pillars-can-be-3-posts-or-expanded-to-8-10-posts">Three Pillars (Can be 3 posts OR expanded to 8-10 posts)<a class="headerlink" href="#three-pillars-can-be-3-posts-or-expanded-to-8-10-posts" title="Permanent link">&para;</a></h3>
+<hr />
+<h2 id="pillar-1-from-pre-sales-to-automation-expert">PILLAR 1: "From Pre-Sales to Automation Expert"<a class="headerlink" href="#pillar-1-from-pre-sales-to-automation-expert" title="Permanent link">&para;</a></h2>
+<p><strong>Theme:</strong> The awakening - discovering automation's potential</p>
+<p><strong>Timeline:</strong> 2015-2020</p>
+<p><strong>Key Message:</strong> You don't need to be hired as an automator to start automating. Curiosity and problem-solving drive automation adoption.</p>
+<h3 id="potential-post-breakdown">Potential Post Breakdown:<a class="headerlink" href="#potential-post-breakdown" title="Permanent link">&para;</a></h3>
+<h4 id="post-11-the-sales-engineer-who-automated-himself">Post 1.1: "The Sales Engineer Who Automated Himself"<a class="headerlink" href="#post-11-the-sales-engineer-who-automated-himself" title="Permanent link">&para;</a></h4>
+<p><strong>Content:</strong>
+- <strong>Orange Business Services (2015-2018)</strong> - Pre-sales Engineer apprenticeship during ESIGELEC studies
+  - Job: RFPs, custom network architectures, commercial proposals, client meetings
+  - Problem: Repetitive manual work creating similar proposals in Word
+  - Solution: Self-taught VBA (Visual Basic for Applications) for document automation
+  - Realization: "Why am I doing this manually?" became my mantra</p>
+<ul>
+<li><strong>The Bandwidth Eligibility Automation</strong></li>
+<li><strong>Context:</strong> Tool to determine bandwidth eligibility for customers with 100+ sites</li>
+<li>
+<p><strong>The Business Problem:</strong></p>
+<ul>
+<li>Customers (RFPs and private requests) needed to know what bandwidth Orange could deliver at each site</li>
+<li>RFP documents (PDFs) contained all customer addresses and their desired bandwidth requirements</li>
+<li>Bandwidth eligibility was the FIRST thing to check for any L2, L3, or internet connection</li>
+<li>This verification was needed for every RFP and private customer request</li>
+</ul>
+</li>
+<li>
+<p><strong>The Manual Pain:</strong></p>
+<ul>
+<li>Extract addresses from PDF documents</li>
+<li>Check each site individually for available bandwidth</li>
+<li>Compare desired vs. available bandwidth for 100+ sites</li>
+<li>Highly repetitive and error-prone</li>
+</ul>
+</li>
+<li>
+<p><strong>The Automation Solution:</strong></p>
+<ul>
+<li>Discovered the bandwidth calculation tool supported CSV import</li>
+<li><strong>Workflow created:</strong></li>
+<li>Extract customer addresses and desired bandwidth from PDF to CSV</li>
+<li>Add required fields (phone number, Orange internal customer number)</li>
+<li>Import CSV into the bandwidth calculation tool</li>
+<li>Export results from the tool</li>
+<li>Compare: capable bandwidth &gt;= desired bandwidth for each site</li>
+<li>Result: Quick eligibility assessment for entire customer portfolio</li>
+</ul>
+</li>
+<li>
+<p><strong>Engineering Education (2013-2018)</strong></p>
+</li>
+<li>ESIGELEC: Engineering degree of business in IT and Network</li>
+<li>
+<p>Programming foundation: C, Java from school</p>
+</li>
+<li>
+<p><strong>The Decision (2018)</strong></p>
+</li>
+<li>Choice: Stay in pre-sales (comfortable, good pay) OR move to build &amp; run (hands-on, technical)</li>
+<li>Decision: <strong>I chose the technical path</strong></li>
+</ul>
+<p><strong>Key Takeaway:</strong> Automation starts with asking "Why am I doing this manually?" - not with being hired as an automation engineer. Even in pre-sales, finding ways to streamline repetitive tasks (like bandwidth eligibility checks for 100+ sites) builds the foundation for an automation mindset.</p>
+<h4 id="post-12-first-steps-from-postman-to-python">Post 1.2: "First Steps: From Postman to Python"<a class="headerlink" href="#post-12-first-steps-from-postman-to-python" title="Permanent link">&para;</a></h4>
+<p><strong>Content:</strong>
+- <strong>Orange Polska Mission (Jun-Sep 2017)</strong> - Virtualization Engineer (4 months during studies)
+  - Project: ONAP (Open Network Automation Platform) - analyze and implement
+  - Skills: Python scripting, Bash automation, Netconf protocol, Yang models, JSON
+  - Key Insight: <strong>"I saw that automation would be implemented in the future, and that I would like to be part of it"</strong>
+  - Important Note: ONAP was theoretical/R&amp;D, not yet production-ready</p>
+<ul>
+<li><strong>Nomios (Sep 2018 - Feb 2020)</strong> - Network &amp; Security Engineer</li>
+<li><strong>First hands-on job</strong> - working directly with customers daily</li>
+<li>Worked with <strong>30+ different customers</strong></li>
+<li>Multi-vendor security: Palo Alto (PCNSE), Fortinet, Zscaler, Riverbed, Cisco ASA/Firewall</li>
+<li>Cloud exposure: Azure (Associate Administrator 103), AWS</li>
+<li>Challenge: Different CLIs, APIs, config paradigms per vendor</li>
+<li>
+<p><strong>This is where automation became essential, not optional</strong></p>
+</li>
+<li>
+<p><strong>First PRODUCTION Automation Project</strong></p>
+</li>
+<li>Context: REST APIs on network devices just becoming mainstream (2018)</li>
+<li>Discovery: Postman as graphical API exploration tool</li>
+<li>
+<p><strong>The Duplicate Objects Problem:</strong></p>
+<ul>
+<li>Firewalls with hundreds of duplicate objects (same IPs, different names)</li>
+<li>Risk: Must find all dependencies before deletion (security rules, NAT, profiles)</li>
+<li>Manual process: Hours per firewall, error-prone</li>
+</ul>
+</li>
+<li>
+<p><strong>The Solution:</strong></p>
+<ul>
+<li>Step 1: Learn API with Postman (auth, GET, replace, DELETE)</li>
+<li>Step 2: Built Python script with colleague in <strong>one week</strong></li>
+<li>Zero Python/REST API experience (only C, Java from school)</li>
+<li>Script features: Retrieve duplicates, choose keeper, replace references, verify no dependencies, delete</li>
+<li>Result: Hours → Minutes</li>
+</ul>
+</li>
+<li>
+<p><strong>Key Lesson:</strong> "You don't need to be an expert to start. We built a production-ready script in a week as complete beginners."</p>
+</li>
+</ul>
+<p><strong>Key Takeaway:</strong> Your first automation doesn't need to be perfect. Start small, solve real problems, learn as you go.</p>
+<hr />
+<h2 id="pillar-2-network-automation-journey">PILLAR 2: "Network Automation Journey"<a class="headerlink" href="#pillar-2-network-automation-journey" title="Permanent link">&para;</a></h2>
+<p><strong>Theme:</strong> Building the craft - from scripts to systematic automation</p>
+<p><strong>Timeline:</strong> 2020-2023</p>
+<p><strong>Key Message:</strong> Each layer of automation builds on the previous. From scripts → frameworks → orchestration → full systems.</p>
+<h3 id="potential-post-breakdown_1">Potential Post Breakdown:<a class="headerlink" href="#potential-post-breakdown_1" title="Permanent link">&para;</a></h3>
+<h4 id="post-21-the-cisco-graduate-program-building-foundations">Post 2.1: "The Cisco Graduate Program: Building Foundations"<a class="headerlink" href="#post-21-the-cisco-graduate-program-building-foundations" title="Permanent link">&para;</a></h4>
+<p><strong>Content:</strong>
+- <strong>Cisco EMEAR Graduate Program (Mar-Sep 2020)</strong> - Cracow, Poland
+  - Intensive 6-month program (happens twice/year: March &amp; September)</p>
+<ul>
+<li>
+<p><strong>First 3 Months: Technical &amp; Soft Skills</strong></p>
+<ul>
+<li>Networking fundamentals: CCNA and CCNP certifications</li>
+<li>Soft skills: Stress management, customer communication, presentation skills</li>
+<li>Building strong technical foundation</li>
+</ul>
+</li>
+<li>
+<p><strong>Last 3 Months: TAC (Technical Assistance Center)</strong></p>
+<ul>
+<li>Cisco Technical Access Support hands-on experience</li>
+<li>Real-world troubleshooting and customer support</li>
+<li>Handling complex technical issues under pressure</li>
+</ul>
+</li>
+<li>
+<p><strong>Transformation:</strong> From engineer → consultant</p>
+</li>
+<li>Learned: Technical skills + how to communicate and deliver customer value</li>
+</ul>
+<p><strong>Key Takeaway:</strong> Technical skills alone aren't enough. Communication, customer focus, and consulting mindset are equally critical.</p>
+<h4 id="post-22-joining-the-service-provider-world">Post 2.2: "Joining the Service Provider World"<a class="headerlink" href="#post-22-joining-the-service-provider-world" title="Permanent link">&para;</a></h4>
+<p><strong>Content:</strong>
+- <strong>Cisco France - Consulting Service Provider Teams (Sep 2020-Present)</strong>
+  - Role: Network Consulting Engineer
+  - Joined: Consulting Service Provider teams
+  - Main responsibility: <strong>Drive network automation for SP customers</strong></p>
+<ul>
+<li><strong>Initial Focus Areas:</strong></li>
+<li>Service Provider technologies at scale</li>
+<li>Datacenter automation (Fabric IP VXLAN, NX-OS, ACI)</li>
+<li>Building automation solutions for large-scale deployments</li>
+<li>
+<p>Training customers on automation</p>
+</li>
+<li>
+<p><strong>Why SP Automation Matters:</strong></p>
+</li>
+<li>SP networks operate at massive scale</li>
+<li>Manual configuration: Not just inefficient - IMPOSSIBLE</li>
+<li>Requirements: Consistency across thousands of devices, test before production, fast recovery, meet SLAs</li>
+</ul>
+<p><strong>Key Takeaway:</strong> At Service Provider scale, automation isn't optional - it's the only way to operate.</p>
+<h4 id="post-23-the-evolution-from-scripts-to-systems">Post 2.3: "The Evolution: From Scripts to Systems"<a class="headerlink" href="#post-23-the-evolution-from-scripts-to-systems" title="Permanent link">&para;</a></h4>
+<p><strong>Content:</strong>
+- <strong>Automation Evolution Timeline:</strong>
+  1. <strong>2018:</strong> Single-purpose Python scripts (firewall cleanup)
+  2. <strong>2019-2020:</strong> Reusable functions and modules
+  3. <strong>2021-2022:</strong> Ansible playbooks for multi-device orchestration
+  4. <strong>2023:</strong> CI/CD pipelines with automated testing, NSO for service orchestration
+  5. <strong>2024-Present:</strong> Full-stack automation solutions</p>
+<ul>
+<li><strong>Teaching Experience (Feb 2022 - Mar 2023)</strong></li>
+<li>Returned to ESIGELEC as Guest Lecturer</li>
+<li>20-hour module on network security (CERT certification track)</li>
+<li>Taught: Network security fundamentals, modern automation, security in automated environments</li>
+<li>Learned: Teaching forces true understanding, next generation hungry for automation, completed circle (student → teacher)</li>
+</ul>
+<p><strong>Key Takeaway:</strong> Each layer built on the previous one. You can't skip steps - the journey IS the learning.</p>
+<hr />
+<h2 id="pillar-3-service-provider-transformation">PILLAR 3: "Service Provider Transformation"<a class="headerlink" href="#pillar-3-service-provider-transformation" title="Permanent link">&para;</a></h2>
+<p><strong>Theme:</strong> Advanced automation - Full-stack solutions at scale</p>
+<p><strong>Timeline:</strong> 2023-Present (2024 focus)</p>
+<p><strong>Key Message:</strong> Modern network automation requires software development skills + deep networking knowledge + orchestration expertise.</p>
+<h3 id="potential-post-breakdown_2">Potential Post Breakdown:<a class="headerlink" href="#potential-post-breakdown_2" title="Permanent link">&para;</a></h3>
+<h4 id="post-31-building-web-applications-for-network-automation">Post 3.1: "Building Web Applications for Network Automation"<a class="headerlink" href="#post-31-building-web-applications-for-network-automation" title="Permanent link">&para;</a></h4>
+<p><strong>Content:</strong>
+- <strong>The Shift to Full-Stack Development</strong>
+  - Moving beyond scripts and playbooks
+  - Need: User-friendly interfaces for operators
+  - Solution: Web applications (Django, FastAPI)</p>
+<ul>
+<li><strong>Current Tech Stack:</strong></li>
+<li><strong>Languages:</strong> Python</li>
+<li><strong>Web Frameworks:</strong> Django, FastAPI (for automation web applications)</li>
+<li><strong>Network Orchestration:</strong> Cisco NSO (service deployment across SP networks)</li>
+<li><strong>CI/CD:</strong> GitLab pipelines (automated testing and deployment)</li>
+<li><strong>Configuration Management:</strong> Ansible</li>
+<li>
+<p><strong>AI-Assisted Development:</strong> GitHub Copilot (since 2024)</p>
+</li>
+<li>
+<p><strong>The Complete Solution:</strong></p>
+</li>
+<li>Web interface → operators interact</li>
+<li>Backend logic → Python/Django/FastAPI</li>
+<li>Orchestration layer → NSO deploys to devices</li>
+<li>Network devices → IOS-XR, SROS, Huawei</li>
+</ul>
+<p><strong>Key Takeaway:</strong> Network automation in 2024 means being a software developer who understands networks deeply.</p>
+<h4 id="post-32-service-provider-networks-backbone-and-edge-automation">Post 3.2: "Service Provider Networks: Backbone and Edge Automation"<a class="headerlink" href="#post-32-service-provider-networks-backbone-and-edge-automation" title="Permanent link">&para;</a></h4>
+<p><strong>Content:</strong>
+- <strong>Working on Backbone and Edge Networks</strong>
+  - <strong>Cisco IOS-XR</strong> - SP routing/core
+  - <strong>Nokia SROS</strong> - Multi-vendor SP environment
+  - <strong>Huawei</strong> - Global SP presence</p>
+<ul>
+<li><strong>Datacenter Work</strong> (less frequent but still present)</li>
+<li>
+<p>Fabric IP VXLAN (NX-OS + ACI)</p>
+</li>
+<li>
+<p><strong>Real-World Challenges:</strong></p>
+</li>
+<li>Multi-vendor environments</li>
+<li>Different data models (Yang, OpenConfig)</li>
+<li>Configuration complexity</li>
+<li>Scale requirements (thousands of devices)</li>
+<li>Zero-touch provisioning</li>
+<li>Service activation speed</li>
+</ul>
+<p><strong>Key Takeaway:</strong> SP networks demand multi-vendor expertise and orchestration at massive scale.</p>
+<h4 id="post-33-nso-from-configuration-to-services">Post 3.3: "NSO: From Configuration to Services"<a class="headerlink" href="#post-33-nso-from-configuration-to-services" title="Permanent link">&para;</a></h4>
+<p><strong>Content:</strong>
+- <strong>Why NSO?</strong>
+  - Multi-vendor abstraction
+  - Transaction-based changes (rollback capability)
+  - Service modeling
+  - Network-wide orchestration</p>
+<ul>
+<li><strong>Building NSO Services:</strong></li>
+<li>Service design</li>
+<li>Yang modeling</li>
+<li>Template development</li>
+<li>
+<p>Integration with web applications</p>
+</li>
+<li>
+<p><strong>The Complete Workflow:</strong></p>
+</li>
+<li>User requests service via web app</li>
+<li>Backend processes request</li>
+<li>NSO orchestrates deployment</li>
+<li>Devices configured consistently</li>
+<li>Validation and monitoring</li>
+</ul>
+<p><strong>Key Takeaway:</strong> NSO transforms network automation from device configuration to service orchestration.</p>
+<h4 id="post-34-github-copilot-and-ai-in-network-automation-2024">Post 3.4: "GitHub Copilot and AI in Network Automation (2024)"<a class="headerlink" href="#post-34-github-copilot-and-ai-in-network-automation-2024" title="Permanent link">&para;</a></h4>
+<p><strong>Content:</strong>
+- <strong>Adopting GitHub Copilot (2024)</strong>
+  - How AI assists development
+  - Faster prototyping
+  - Code completion for common patterns
+  - Learning new frameworks</p>
+<ul>
+<li><strong>Impact on Productivity:</strong></li>
+<li>Writing NSO services faster</li>
+<li>Django/FastAPI development acceleration</li>
+<li>Documentation generation</li>
+<li>
+<p>Test case creation</p>
+</li>
+<li>
+<p><strong>The Human Element:</strong></p>
+</li>
+<li>Still need deep networking knowledge</li>
+<li>AI assists, doesn't replace expertise</li>
+<li>Critical thinking still essential</li>
+</ul>
+<p><strong>Key Takeaway:</strong> AI tools like Copilot accelerate development, but domain expertise remains critical.</p>
+<hr />
+<h2 id="key-themes-across-all-posts">Key Themes Across All Posts<a class="headerlink" href="#key-themes-across-all-posts" title="Permanent link">&para;</a></h2>
+<h3 id="1-you-dont-need-permission-to-start">1. <strong>You Don't Need Permission to Start</strong><a class="headerlink" href="#1-you-dont-need-permission-to-start" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Started automating at Orange (not hired for automation)</li>
+<li>Self-taught VBA, Python, APIs</li>
+<li>Curiosity and problem-solving drive adoption</li>
+</ul>
+<h3 id="2-each-experience-builds-on-the-last">2. <strong>Each Experience Builds on the Last</strong><a class="headerlink" href="#2-each-experience-builds-on-the-last" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Sales → Understanding customer needs</li>
+<li>Networking → Hands-on technical depth</li>
+<li>Automation → Technical solutions to business problems</li>
+<li><strong>This journey couldn't be skipped. Each step was necessary.</strong></li>
+</ul>
+<h3 id="3-start-small-think-big">3. <strong>Start Small, Think Big</strong><a class="headerlink" href="#3-start-small-think-big" title="Permanent link">&para;</a></h3>
+<ul>
+<li>First automation: VBA in Word</li>
+<li>Latest: Django/FastAPI + NSO for SP networks</li>
+<li>Both started with: "This is tedious, there must be a better way."</li>
+</ul>
+<h3 id="4-learn-in-public-share-the-journey">4. <strong>Learn in Public, Share the Journey</strong><a class="headerlink" href="#4-learn-in-public-share-the-journey" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Teaching at ESIGELEC</li>
+<li>Writing blog posts</li>
+<li>Helping customers</li>
+<li>Sharing knowledge accelerates everyone's growth</li>
+</ul>
+<h3 id="5-the-tools-change-the-mindset-doesnt">5. <strong>The Tools Change, The Mindset Doesn't</strong><a class="headerlink" href="#5-the-tools-change-the-mindset-doesnt" title="Permanent link">&para;</a></h3>
+<ul>
+<li>VBA → Postman → Python → Ansible → NSO → Django/FastAPI → GitHub Copilot</li>
+<li>Specific tools matter less than asking: "Can this be automated?"</li>
+</ul>
+<hr />
+<h2 id="writing-guidelines">Writing Guidelines<a class="headerlink" href="#writing-guidelines" title="Permanent link">&para;</a></h2>
+<h3 id="tone">Tone<a class="headerlink" href="#tone" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Authentic and personal (first-person narrative)</li>
+<li>Honest about challenges and failures</li>
+<li>Encouraging for beginners</li>
+<li>Technical but accessible</li>
+<li>Balance storytelling with technical depth</li>
+</ul>
+<h3 id="structure-for-each-post">Structure for Each Post<a class="headerlink" href="#structure-for-each-post" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Hook/opening story</li>
+<li>Context setting</li>
+<li>Problem description</li>
+<li>Solution exploration</li>
+<li>Technical details (but not overwhelming)</li>
+<li>Lessons learned</li>
+<li>Key takeaway</li>
+<li>Call to action (connect, try something, ask questions)</li>
+</ul>
+<h3 id="technical-depth">Technical Depth<a class="headerlink" href="#technical-depth" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Medium technical level</li>
+<li>Include real examples</li>
+<li>Code snippets where relevant (not full scripts)</li>
+<li>Architecture concepts</li>
+<li>Focus on "why" not just "how"</li>
+<li>Balance practical advice with technical concepts</li>
+</ul>
+<h3 id="length">Length<a class="headerlink" href="#length" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Comprehensive posts: 2000-3000 words</li>
+<li>Detailed posts: 1200-1800 words</li>
+<li>Keep reader engaged with visuals, examples, stories</li>
+</ul>
+<hr />
+<h2 id="call-to-action-standard-across-posts">Call to Action (Standard Across Posts)<a class="headerlink" href="#call-to-action-standard-across-posts" title="Permanent link">&para;</a></h2>
+<p>Connect with me:
+- <strong>Twitter:</strong> <a href="https://twitter.com/jeremleclech">@jeremleclech</a>
+- <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jeremyleclech">Jeremy LE CLEC'H</a></p>
+<p>Questions? Thoughts? Reach out - always happy to chat with industry colleagues and aspiring network engineers.</p>
+<hr />
+<h2 id="seo-keywords-to-include">SEO Keywords to Include<a class="headerlink" href="#seo-keywords-to-include" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Network automation</li>
+<li>Service Provider automation</li>
+<li>Python network automation</li>
+<li>Cisco NSO</li>
+<li>Django network automation</li>
+<li>FastAPI</li>
+<li>IOS-XR automation</li>
+<li>Nokia SROS</li>
+<li>Network orchestration</li>
+<li>CI/CD for networks</li>
+<li>GitLab CI/CD</li>
+<li>Ansible networking</li>
+<li>PCNSE</li>
+<li>Network consulting</li>
+<li>Career in network automation</li>
+<li>From networking to programming</li>
+<li>GitHub Copilot</li>
+</ul>
+<hr />
+<h2 id="publication-strategy">Publication Strategy<a class="headerlink" href="#publication-strategy" title="Permanent link">&para;</a></h2>
+<h3 id="option-a-comprehensive-3-posts">Option A - Comprehensive (3 Posts)<a class="headerlink" href="#option-a-comprehensive-3-posts" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Post 1:</strong> Pillar 1 complete (3000 words)</li>
+<li><strong>Post 2:</strong> Pillar 2 complete (3000 words)</li>
+<li><strong>Post 3:</strong> Pillar 3 complete (3000 words)</li>
+<li><strong>Pros:</strong> Complete story per post, easier to manage</li>
+<li><strong>Cons:</strong> Long reads, might lose readers</li>
+</ul>
+<h3 id="option-b-detailed-series-8-10-posts">Option B - Detailed Series (8-10 Posts)<a class="headerlink" href="#option-b-detailed-series-8-10-posts" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Break each pillar into 2-4 sub-posts</li>
+<li><strong>Pros:</strong> Better reader engagement, more SEO opportunities, easier to consume</li>
+<li><strong>Cons:</strong> More posts to manage, need to maintain narrative thread</li>
+</ul>
+<p><strong>Recommendation:</strong> Start with Option B (detailed series) for better engagement and SEO.</p>
+<hr />
+<h2 id="questions-to-answer-before-writing">Questions to Answer Before Writing<a class="headerlink" href="#questions-to-answer-before-writing" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Format preference:</strong> 3 comprehensive posts OR 8-10 detailed posts?</li>
+<li><strong>Technical depth:</strong> How much code/technical detail?</li>
+<li><strong>Specific stories:</strong> Any particular projects, wins, or failures to highlight?</li>
+<li><strong>Publication timeline:</strong> How often to publish?</li>
+<li><strong>Additional content:</strong> Diagrams, code examples, architecture visuals?</li>
+</ol>
+<hr />
+<h2 id="success-metrics">Success Metrics<a class="headerlink" href="#success-metrics" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Reader engagement (comments, questions)</li>
+<li>Connections made (LinkedIn, Twitter)</li>
+<li>Helping others start their automation journey</li>
+<li>Building credibility in network automation space</li>
+<li>Creating valuable resource for community</li>
+</ul>
+<hr />
+<p><em>This plan created: December 2025</em>
+<em>Author: Jeremy LE CLEC'H</em>
+<em>Blog: https://jeremy-coder76.github.io</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Jeremy-Coder76" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../js/table-wrapper.js"></script>
+      
+    
+  </body>
+</html>

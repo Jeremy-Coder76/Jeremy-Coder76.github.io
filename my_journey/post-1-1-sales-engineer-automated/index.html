@@ -1,0 +1,1333 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Personal blog and journey documentation">
+      
+      
+        <meta name="author" content="Jeremy LE CLEC'H">
+      
+      
+      
+        <link rel="prev" href="../journey/">
+      
+      
+        <link rel="next" href="../../about/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Post 1.1 - The Sales Engineer Who Discovered Automation - jleclech blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/terminal-theme.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-sales-engineer-who-discovered-automation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="jleclech blog" class="md-header__button md-logo" aria-label="jleclech blog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 19V7H4v12zm0-16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-7 14v-2h5v2zm-3.42-4L5.57 9H8.4l3.3 3.3c.39.39.39 1.03 0 1.42L8.42 17H5.59z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            jleclech blog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Post 1.1 - The Sales Engineer Who Discovered Automation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../journey/" class="md-tabs__link">
+          
+  
+  
+  My Journey
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="jleclech blog" class="md-nav__button md-logo" aria-label="jleclech blog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 19V7H4v12zm0-16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-7 14v-2h5v2zm-3.42-4L5.57 9H8.4l3.3 3.3c.39.39.39 1.03 0 1.42L8.42 17H5.59z"/></svg>
+
+    </a>
+    jleclech blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    My Journey
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    My Journey
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../journey/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Journey
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Post 1.1 - The Sales Engineer Who Discovered Automation
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Post 1.1 - The Sales Engineer Who Discovered Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-moment-everything-changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Moment Everything Changed
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-pre-sales-engineer-who-didnt-code-yet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Pre-Sales Engineer Who Didn't Code (Yet)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-problem-the-bandwidth-eligibility-nightmare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Problem: The Bandwidth Eligibility Nightmare
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-engineering-student-with-zero-automation-experience" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Engineering Student with Zero Automation Experience
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discovery-the-csv-import-feature" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Discovery: The CSV Import Feature
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-solution-from-manual-to-automated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Solution: From Manual to Automated
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-realization-why-am-i-doing-this-manually" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Realization: "Why Am I Doing This Manually?"
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-skills-i-didnt-know-i-was-building" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Skills I Didn't Know I Was Building
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-decision-comfort-vs-growth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Decision: Comfort vs. Growth
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-lessons-what-i-learned-from-automating-word-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Lessons: What I Learned from Automating Word Documents
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Lessons: What I Learned from Automating Word Documents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-you-dont-need-permission-to-start-automating" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. You Don't Need Permission to Start Automating
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-start-with-the-pain-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Start with the Pain Points
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-perfect-is-the-enemy-of-done" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Perfect is the Enemy of Done
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-every-language-you-learn-makes-the-next-one-easier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Every Language You Learn Makes the Next One Easier
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-automation-is-a-mindset-not-a-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Automation is a Mindset, Not a Tool
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-takeaway" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Takeaway
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connect-with-me" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connect With Me
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-moment-everything-changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Moment Everything Changed
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-pre-sales-engineer-who-didnt-code-yet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Pre-Sales Engineer Who Didn't Code (Yet)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-problem-the-bandwidth-eligibility-nightmare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Problem: The Bandwidth Eligibility Nightmare
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-engineering-student-with-zero-automation-experience" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Engineering Student with Zero Automation Experience
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discovery-the-csv-import-feature" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Discovery: The CSV Import Feature
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-solution-from-manual-to-automated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Solution: From Manual to Automated
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-realization-why-am-i-doing-this-manually" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Realization: "Why Am I Doing This Manually?"
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-skills-i-didnt-know-i-was-building" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Skills I Didn't Know I Was Building
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-decision-comfort-vs-growth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Decision: Comfort vs. Growth
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-lessons-what-i-learned-from-automating-word-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Lessons: What I Learned from Automating Word Documents
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Lessons: What I Learned from Automating Word Documents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-you-dont-need-permission-to-start-automating" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. You Don't Need Permission to Start Automating
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-start-with-the-pain-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Start with the Pain Points
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-perfect-is-the-enemy-of-done" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Perfect is the Enemy of Done
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-every-language-you-learn-makes-the-next-one-easier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Every Language You Learn Makes the Next One Easier
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-automation-is-a-mindset-not-a-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Automation is a Mindset, Not a Tool
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-takeaway" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Takeaway
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connect-with-me" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connect With Me
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="the-sales-engineer-who-discovered-automation">The Sales Engineer Who Discovered Automation<a class="headerlink" href="#the-sales-engineer-who-discovered-automation" title="Permanent link">&para;</a></h1>
+<p><em>Part 1 of the "From Sales to Code" series</em></p>
+<hr />
+<h2 id="the-moment-everything-changed">The Moment Everything Changed<a class="headerlink" href="#the-moment-everything-changed" title="Permanent link">&para;</a></h2>
+<p>I was staring at yet another PDF document from an RFP at Orange Business Services in Paris. Inside: a customer with 127 sites across France, each with their address and the bandwidth they wanted for their MPLS connections.</p>
+<p>My job? Check if we could actually deliver that bandwidth at each location.</p>
+<p>The manual process was soul-crushing:
+1. Open the PDF, manually extract each address and desired bandwidth
+2. Copy each address into Orange's internal bandwidth eligibility tool
+3. Fill in additional fields: phone number, Orange customer reference number
+4. Run the calculation for each site
+5. Export the results
+6. Compare: Can we deliver what they want? (Capable bandwidth ≥ Desired bandwidth?)
+7. Repeat. 127 times.</p>
+<p>This wasn't a one-time thing. Every RFP with multi-site deployments required this. Even private customers without RFPs needed bandwidth eligibility checks—it's the first thing we verify for any L2, L3, or internet connection proposal.</p>
+<p>I remember thinking: <em>"There has to be a better way."</em></p>
+<p>That thought changed everything.</p>
+<h2 id="the-pre-sales-engineer-who-didnt-code-yet">The Pre-Sales Engineer Who Didn't Code (Yet)<a class="headerlink" href="#the-pre-sales-engineer-who-didnt-code-yet" title="Permanent link">&para;</a></h2>
+<p>Let me back up a bit. In 2015, I started my apprenticeship at Orange Business Services while completing my engineering degree at ESIGELEC (École Supérieure d'Ingénieurs en Génie Électrique). I was a Pre-Sales Engineer—the person who sits between the sales team and the technical team, translating customer needs into network architectures and proposals.</p>
+<p>The job was fantastic in many ways:</p>
+<ul>
+<li>
+<p>Meeting clients and understanding their business challenges</p>
+</li>
+<li>
+<p>Designing custom network solutions (MPLS, SD-WAN, security architectures)</p>
+</li>
+<li>
+<p>Creating technical proposals and commercial offers</p>
+</li>
+<li>
+<p>Presenting solutions to C-level executives</p>
+</li>
+</ul>
+<p>The pay was good. The work was interesting. I was learning about customer needs, business requirements, and how to communicate technical concepts to non-technical audiences.</p>
+<p><strong>But there was one massive problem: The mind-numbing repetition.</strong></p>
+<h2 id="the-problem-the-bandwidth-eligibility-nightmare">The Problem: The Bandwidth Eligibility Nightmare<a class="headerlink" href="#the-problem-the-bandwidth-eligibility-nightmare" title="Permanent link">&para;</a></h2>
+<p>Here's what most people don't realize about pre-sales engineering at a major telco: <strong>bandwidth eligibility is everything.</strong> Before you can propose any L2, L3, or internet connection, you need to verify one critical question:</p>
+<blockquote>
+<p>"Can we actually deliver the bandwidth the customer wants at this specific address?"</p>
+</blockquote>
+<p>For single-site customers, this is manageable. But for enterprise customers with dozens or hundreds of sites? It becomes a nightmare.</p>
+<p><strong>The manual workflow looked like this:</strong></p>
+<ol>
+<li><strong>Receive the RFP PDF</strong> - Customer lists all their sites with addresses and desired bandwidth</li>
+<li><strong>Extract data manually</strong> - Copy each address and bandwidth requirement from the PDF</li>
+<li><strong>Open Orange's bandwidth tool</strong> - Internal system that calculates eligibility based on infrastructure</li>
+<li><strong>For each site:</strong></li>
+<li>Paste the address</li>
+<li>Add phone number (if available)</li>
+<li>Add Orange internal customer reference number</li>
+<li>Submit the calculation</li>
+<li>Wait for results</li>
+<li>Export the result</li>
+<li><strong>Build comparison table</strong> - Check if capable bandwidth ≥ desired bandwidth for every site</li>
+<li><strong>Identify issues</strong> - Flag sites where we can't meet requirements</li>
+<li><strong>Repeat for the next RFP</strong></li>
+</ol>
+<p><strong>A typical customer with 100+ sites would consume an enormous amount of time.</strong> And this wasn't optional—it was the <strong>first mandatory step</strong> for every multi-site proposal, RFP or not.</p>
+<p>The frustration wasn't just the time. It was the errors:</p>
+<ul>
+<li>
+<p>Copy the wrong address? You've checked eligibility for the wrong location.</p>
+</li>
+<li>
+<p>Miss a site? Your proposal is incomplete and won't meet the RFP requirements.</p>
+</li>
+<li>
+<p>Transpose bandwidth numbers? You might promise something you can't deliver.</p>
+</li>
+</ul>
+<p><strong>I was being a human copy-paste machine. And I hated it.</strong></p>
+<h2 id="the-engineering-student-with-zero-automation-experience">The Engineering Student with Zero Automation Experience<a class="headerlink" href="#the-engineering-student-with-zero-automation-experience" title="Permanent link">&para;</a></h2>
+<p>Here's the irony: I was an engineering student. I had programming courses—C and Java at ESIGELEC. I could write a function, understand loops, work with data structures.</p>
+<p>But in my mind, that was "academic programming." Writing algorithms for school assignments. Solving theoretical problems.</p>
+<p><strong>I had never connected programming to my actual job.</strong></p>
+<p>Nobody told me: "Hey, you could automate this." There was no automation engineer role at our office. No one was building tools. Everyone just... did the work manually. That's how it had always been done.</p>
+<p>But one day, while exploring the bandwidth eligibility tool, I noticed something interesting.</p>
+<h2 id="discovery-the-csv-import-feature">Discovery: The CSV Import Feature<a class="headerlink" href="#discovery-the-csv-import-feature" title="Permanent link">&para;</a></h2>
+<p>I was clicking through the bandwidth tool's interface when I saw it: <strong>"Import CSV"</strong></p>
+<p>Wait. The tool could import multiple addresses at once from a CSV file?</p>
+<p>This changed everything. If I could:
+1. Extract addresses and bandwidth from the RFP PDF
+2. Format the data as CSV with the required fields
+3. Import it into the tool
+4. Export the results</p>
+<p>Then I could process 100+ sites in minutes instead of spending my entire day on a single customer.</p>
+<p>But there was a problem: <strong>How do I extract data from PDFs and create CSVs programmatically?</strong></p>
+<p>That's when I discovered <strong>VBA (Visual Basic for Applications)</strong>—a programming language built into Microsoft Office applications. I could use it to work with PDFs, Excel, and automate the entire workflow.</p>
+<p>I had zero VBA experience. But I had desperation, curiosity, and access to Google.</p>
+<p>I started learning:</p>
+<ul>
+<li>
+<p><strong>First:</strong> Learned how to extract text from PDFs using VBA libraries</p>
+</li>
+<li>
+<p><strong>Then:</strong> Figured out how to parse addresses and bandwidth from unstructured PDF data</p>
+</li>
+<li>
+<p><strong>Next:</strong> Automated CSV creation with proper formatting for the bandwidth tool</p>
+</li>
+<li>
+<p><strong>Finally:</strong> Built the complete workflow: PDF → CSV → Import → Export → Comparison</p>
+</li>
+</ul>
+<p>Was the code elegant? Absolutely not.
+Was it production-ready? Far from it.
+Did it work? <strong>Yes.</strong></p>
+<h2 id="the-solution-from-manual-to-automated">The Solution: From Manual to Automated<a class="headerlink" href="#the-solution-from-manual-to-automated" title="Permanent link">&para;</a></h2>
+<p>Here's what my bandwidth eligibility automation did:</p>
+<p><strong>Step 1: PDF Data Extraction</strong>
+- Input: RFP PDF with customer sites, addresses, and desired bandwidth
+- VBA script extracts text from PDF
+- Parses addresses and bandwidth requirements using pattern matching
+- Handles variations in how addresses were formatted in different RFPs</p>
+<p><strong>Step 2: CSV Preparation</strong>
+- Creates properly formatted CSV with required fields:
+  - Site address
+  - Desired bandwidth
+  - Phone number (if available in PDF)
+  - Orange internal customer reference number
+- Adds any missing fields with default values or prompts for manual input</p>
+<p><strong>Step 3: Automated Import</strong>
+- CSV ready for import into Orange's bandwidth eligibility tool
+- Tool processes all sites at once
+- Calculates available bandwidth based on Orange's infrastructure database</p>
+<p><strong>Step 4: Results Analysis</strong>
+- Export bandwidth calculation results
+- VBA script compares: Capable bandwidth vs. Desired bandwidth
+- Generates summary report:
+  - ✅ Sites where we can deliver requested bandwidth
+  - ⚠️ Sites where bandwidth is lower than requested
+  - ❌ Sites where no service is available
+- Creates detailed Excel report for the sales team</p>
+<p><strong>The time reduction was dramatic.</strong> What used to consume my entire day for a 100+ site customer now took only minutes.</p>
+<p>The first time I ran it successfully, I just stared at the screen. A full bandwidth eligibility analysis for 127 sites. Complete. Accurate. Done in a fraction of the time.</p>
+<p>I felt like I had discovered a superpower.</p>
+<h2 id="the-realization-why-am-i-doing-this-manually">The Realization: "Why Am I Doing This Manually?"<a class="headerlink" href="#the-realization-why-am-i-doing-this-manually" title="Permanent link">&para;</a></h2>
+<p>That question became my mantra.</p>
+<p>Why am I manually copying addresses from PDFs? <strong>→ Automate it.</strong>
+Why am I manually entering the same data into the bandwidth tool for each site? <strong>→ Automate it.</strong>
+Why am I manually comparing bandwidth values in spreadsheets? <strong>→ Automate it.</strong></p>
+<p><strong>The mindset shift wasn't learning VBA. It was starting to see my work through the lens of automation.</strong></p>
+<p>Every repetitive task became a potential automation target. Every time I found myself doing something for the third time, I'd pause and ask: "Can this be automated?"</p>
+<p>Sometimes yes, sometimes no. But asking the question changed everything.</p>
+<p>The bandwidth eligibility automation wasn't just about saving time—it was about <strong>eliminating error-prone manual work</strong> that could cost the company money if done wrong.</p>
+<h2 id="the-skills-i-didnt-know-i-was-building">The Skills I Didn't Know I Was Building<a class="headerlink" href="#the-skills-i-didnt-know-i-was-building" title="Permanent link">&para;</a></h2>
+<p>Looking back, that bandwidth eligibility automation wasn't just about saving time. I was building foundational automation skills without realizing it:</p>
+<ul>
+<li>
+<p><strong>Data Extraction:</strong> Parsing unstructured data from PDFs (addresses, bandwidth values)</p>
+</li>
+<li>
+<p><strong>Pattern Recognition:</strong> Identifying what's repetitive vs. what's truly custom</p>
+</li>
+<li>
+<p><strong>Data Transformation:</strong> Converting PDF data → structured CSV → analysis results</p>
+</li>
+<li>
+<p><strong>Integration:</strong> Making different tools work together (PDF reader → VBA → CSV → bandwidth tool)</p>
+</li>
+<li>
+<p><strong>Error Handling:</strong> What happens when addresses are malformed or data is missing?</p>
+</li>
+<li>
+<p><strong>User Experience:</strong> Making the tool usable by colleagues, not just me</p>
+</li>
+<li>
+<p><strong>Business Impact:</strong> Understanding that automation errors could cost real money (wrong bandwidth = wrong pricing)</p>
+</li>
+</ul>
+<p>But more importantly, I was developing <strong>the automation mindset:</strong></p>
+<blockquote>
+<p>"Computers should do repetitive work. Humans should do creative work."</p>
+</blockquote>
+<h2 id="the-decision-comfort-vs-growth">The Decision: Comfort vs. Growth<a class="headerlink" href="#the-decision-comfort-vs-growth" title="Permanent link">&para;</a></h2>
+<p>By 2018, I had a choice to make.</p>
+<p>I could stay in pre-sales:</p>
+<ul>
+<li>
+<p>Good salary</p>
+</li>
+<li>
+<p>Client-facing role</p>
+</li>
+<li>
+<p>Business development opportunities</p>
+</li>
+<li>
+<p>Career path was clear</p>
+</li>
+</ul>
+<p>Or I could move to build &amp; run—actually implementing and operating networks rather than just designing proposals.</p>
+<p><strong>I chose the technical path.</strong></p>
+<p>Not because pre-sales was bad. It wasn't. I learned incredible skills about customer needs, business requirements, and communication.</p>
+<p>But I had glimpsed something during those VBA automation projects: <strong>I loved building solutions. I loved making things work. I loved the feeling of automating away tedious work.</strong></p>
+<p>I wanted to work closer to the actual technology. I wanted to build automation for production networks, not just document generation. I wanted to go deeper.</p>
+<p>So in 2018, I joined <strong>Nomios</strong> as a Network &amp; Security Engineer, taking a pay cut to get hands-on experience with real network infrastructure.</p>
+<p>That decision launched the next phase of my journey.</p>
+<h2 id="key-lessons-what-i-learned-from-automating-word-documents">Key Lessons: What I Learned from Automating Word Documents<a class="headerlink" href="#key-lessons-what-i-learned-from-automating-word-documents" title="Permanent link">&para;</a></h2>
+<h3 id="1-you-dont-need-permission-to-start-automating">1. You Don't Need Permission to Start Automating<a class="headerlink" href="#1-you-dont-need-permission-to-start-automating" title="Permanent link">&para;</a></h3>
+<p>Nobody hired me as an "automation engineer." Nobody asked me to build VBA tools. I wasn't assigned to an automation project.</p>
+<p>I just... started. Because I was frustrated with manual work and curious about solutions.</p>
+<p><strong>You don't need a job title that says "automation" to begin automating.</strong></p>
+<h3 id="2-start-with-the-pain-points">2. Start with the Pain Points<a class="headerlink" href="#2-start-with-the-pain-points" title="Permanent link">&para;</a></h3>
+<p>Don't try to automate everything. Start with what hurts:</p>
+<ul>
+<li>
+<p>What takes the most time?</p>
+</li>
+<li>
+<p>What's most error-prone?</p>
+</li>
+<li>
+<p>What makes you stay late at the office?</p>
+</li>
+</ul>
+<p>My pain point was bandwidth eligibility checking for multi-site customers. Yours might be configuration backups, or log analysis, or compliance reporting.</p>
+<p><strong>Automate your biggest pain first.</strong></p>
+<h3 id="3-perfect-is-the-enemy-of-done">3. Perfect is the Enemy of Done<a class="headerlink" href="#3-perfect-is-the-enemy-of-done" title="Permanent link">&para;</a></h3>
+<p>My first VBA script was terrible. Hardcoded values. No error handling. Barely any comments. It would make any senior developer cry.</p>
+<p><strong>But it worked.</strong> And it saved significant time.</p>
+<p>You can refactor later. You can improve it later. But if you wait for perfect, you'll never start.</p>
+<p><strong>Ship the 80% solution that saves time today, not the 100% solution that never gets finished.</strong></p>
+<h3 id="4-every-language-you-learn-makes-the-next-one-easier">4. Every Language You Learn Makes the Next One Easier<a class="headerlink" href="#4-every-language-you-learn-makes-the-next-one-easier" title="Permanent link">&para;</a></h3>
+<p>I learned C and Java at school (and barely used them). Then VBA for Word automation. Later, I'd learn Python, Bash, and web frameworks.</p>
+<p>Each one was easier than the last. The concepts transfer. Loops are loops. Functions are functions. Data structures are data structures.</p>
+<p><strong>The first programming language is the hardest. Everything after gets progressively easier.</strong></p>
+<h3 id="5-automation-is-a-mindset-not-a-tool">5. Automation is a Mindset, Not a Tool<a class="headerlink" href="#5-automation-is-a-mindset-not-a-tool" title="Permanent link">&para;</a></h3>
+<p>VBA was just the tool. The real skill was asking: <strong>"Why am I doing this manually?"</strong></p>
+<p>That question works everywhere:</p>
+<ul>
+<li>
+<p>Pre-sales proposals → VBA</p>
+</li>
+<li>
+<p>Network configurations → Python</p>
+</li>
+<li>
+<p>Multi-device orchestration → Ansible</p>
+</li>
+<li>
+<p>Service deployment → NSO</p>
+</li>
+</ul>
+<p><strong>The tools change. The mindset doesn't.</strong></p>
+<h2 id="the-takeaway">The Takeaway<a class="headerlink" href="#the-takeaway" title="Permanent link">&para;</a></h2>
+<p>You might not be building network automation solutions right now. You might be in a sales role, an operations role, a support role.</p>
+<p>That's okay. <strong>That's actually perfect.</strong></p>
+<p>Because the best automation engineers aren't the ones who started with automation. They're the ones who experienced the pain of manual work and decided to fix it.</p>
+<p>They're the ones who asked: "Why am I doing this manually?"</p>
+<p>You don't need:</p>
+<ul>
+<li>
+<p>An automation role</p>
+</li>
+<li>
+<p>Years of programming experience</p>
+</li>
+<li>
+<p>Formal training in Python or Ansible</p>
+</li>
+<li>
+<p>Permission from management</p>
+</li>
+</ul>
+<p>You just need:</p>
+<ul>
+<li>
+<p>A repetitive task that annoys you</p>
+</li>
+<li>
+<p>Curiosity about how to fix it</p>
+</li>
+<li>
+<p>Willingness to learn as you go</p>
+</li>
+</ul>
+<p><strong>That's it.</strong></p>
+<p>My journey from a pre-sales engineer manually checking bandwidth eligibility for hundreds of sites to a network developer building full-stack automation solutions started with one simple question while staring at yet another RFP:</p>
+<p><em>"There has to be a better way."</em></p>
+<p>There was. And I found it. Not because I was specially talented. Not because I had unique opportunities.</p>
+<p><strong>Because I was frustrated enough to try.</strong></p>
+<h2 id="whats-next">What's Next<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
+<p>This is the first post in my "From Sales to Code" series, documenting my journey from a sales engineer with no programming background to a network automation developer building solutions for Service Provider networks.</p>
+<p>In the next post, I'll share how I went from automating Word documents to writing my first production Python script—despite having zero Python or REST API experience. It involved Palo Alto firewalls, hundreds of duplicate objects, and a massive cleanup challenge that would've taken ages manually.</p>
+<p><strong>Coming up:</strong> "First Steps: From Postman to Python"</p>
+<hr />
+<h2 id="connect-with-me">Connect With Me<a class="headerlink" href="#connect-with-me" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Let's Connect!</p>
+<p>I'm always happy to chat with industry colleagues, aspiring network engineers, or anyone curious about network automation.</p>
+<p><strong>Find me on:</strong></p>
+<ul>
+<li><strong>Twitter:</strong> <a href="https://twitter.com/jeremleclech"><img alt="Twitter URL" src="https://img.shields.io/twitter/url/https/twitter.com/jeremleclech.svg?style=social&amp;label=Follow%20%40jeremleclech" /></a></li>
+<li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jeremyleclech"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=social&amp;logo=linkedin" /></a></li>
+</ul>
+<p><strong>Questions? Thoughts? Reach out!</strong> Whether you're just starting your automation journey or looking to level up, I'd love to hear from you.</p>
+</div>
+<p><em>Remember: Every expert was once a beginner who refused to give up.</em></p>
+<hr />
+<p><strong>Tags:</strong> #NetworkAutomation #CareerJourney #VBA #ProgrammingBeginners #FromSalesToCode #AutomationMindset</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Jeremy-Coder76" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../js/table-wrapper.js"></script>
+      
+    
+  </body>
+</html>
