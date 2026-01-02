@@ -833,13 +833,33 @@ body::before {
 
 /* ASCII art container */
 .ascii-art {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.6rem;
-    line-height: 1.1;
-    color: var(--neon-green);
     text-align: center;
-    white-space: pre;
+    margin: 1rem 0;
     overflow-x: auto;
+}
+
+.ascii-art pre {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.ascii-art pre::before {
+    display: none !important;
+}
+
+.ascii-art code {
+    font-family: 'JetBrains Mono', monospace !important;
+    font-size: 0.5rem !important;
+    line-height: 1.15 !important;
+    color: var(--neon-green) !important;
+    background: transparent !important;
+    border: none !important;
+    text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+    white-space: pre !important;
 }
 
 /* Typing effect container */
