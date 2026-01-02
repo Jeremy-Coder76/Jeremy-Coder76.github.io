@@ -143,6 +143,7 @@ body::before {
     display: flex !important;
     flex-wrap: nowrap !important;
     align-items: center !important;
+    position: relative !important;
 }
 
 .md-header__title {
@@ -155,6 +156,10 @@ body::before {
     margin-left: 0.5rem;
     flex: 1 1 auto !important;
     min-width: 0 !important;
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    transform: none !important;
 }
 
 /* Force the ellipsis container to show content properly */
@@ -162,16 +167,22 @@ body::before {
     display: flex !important;
     align-items: center !important;
     height: auto !important;
-    width: 100% !important;
+    width: auto !important;
+    position: relative !important;
+    top: 0 !important;
+    transform: none !important;
 }
 
 /* Ensure title topic (the actual text) is visible - ALWAYS show first topic (site name) */
 .md-header__title .md-header__topic {
-    display: flex !important;
+    display: inline-block !important;
     opacity: 1 !important;
     color: var(--text-primary) !important;
-    position: static !important;
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
     transform: none !important;
+    transition: none !important;
 }
 
 .md-header__title .md-header__topic:first-child {
@@ -187,6 +198,12 @@ body::before {
     content: "$ ";
     color: var(--neon-green);
     opacity: 0.8;
+}
+
+/* Fix tabs to not overlap with header title */
+.md-tabs {
+    position: relative !important;
+    z-index: 1 !important;
 }
 
 /* Logo icon styling */
