@@ -141,6 +141,7 @@ body::before {
 /* Header inner - ensure proper layout */
 .md-header__inner {
     display: flex !important;
+    flex-wrap: nowrap !important;
     align-items: center !important;
 }
 
@@ -152,6 +153,8 @@ body::before {
     font-size: 0.9rem;
     color: var(--text-primary) !important;
     margin-left: 0.5rem;
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
 }
 
 /* Force the ellipsis container to show content properly */
@@ -159,6 +162,7 @@ body::before {
     display: flex !important;
     align-items: center !important;
     height: auto !important;
+    width: 100% !important;
 }
 
 /* Ensure title topic (the actual text) is visible - ALWAYS show first topic (site name) */
@@ -1038,36 +1042,71 @@ body::before {
         overflow-x: hidden;
     }
 
-    /* Ensure header title is visible on mobile */
+    /* FORCE header layout on mobile */
+    .md-header__inner {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        align-items: center !important;
+        flex-direction: row !important;
+    }
+
+    /* FORCE header title visible on mobile - override Material theme */
     .md-header__title {
-        font-size: 0.7rem;
-        letter-spacing: 0.5px;
-        flex-grow: 1 !important;
-        width: auto !important;
-        max-width: none !important;
+        font-size: 0.6rem !important;
+        letter-spacing: 0.3px !important;
+        flex: 1 1 auto !important;
+        min-width: 0 !important;
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        order: 0 !important;
+        margin-left: 0.3rem !important;
     }
 
     .md-header__ellipsis {
         display: flex !important;
+        align-items: center !important;
         width: auto !important;
-        max-width: none !important;
+        max-width: 100% !important;
+        height: auto !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        overflow: hidden !important;
     }
 
     .md-header__title .md-header__topic {
         display: flex !important;
+        visibility: visible !important;
         opacity: 1 !important;
         position: static !important;
         transform: none !important;
         width: auto !important;
+        height: auto !important;
+        line-height: normal !important;
+    }
+
+    .md-header__title .md-header__topic:first-child {
+        display: flex !important;
+    }
+
+    /* Hide the page title topic on mobile */
+    .md-header__title .md-header__topic + .md-header__topic {
+        display: none !important;
     }
 
     .md-header__title .md-header__topic .md-ellipsis {
         display: inline !important;
+        visibility: visible !important;
         opacity: 1 !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
     }
 
     .md-header__title::before {
-        content: "$ ";
+        content: "$ " !important;
+        display: inline !important;
+        color: var(--neon-green) !important;
     }
 }
 
