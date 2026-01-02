@@ -1,86 +1,95 @@
 /* ========================================
-   TERMINAL/CODE THEME FOR MKDOCS MATERIAL
-   Sleek Hacker Aesthetic with Neon Accents
+   MODERN DARK THEME FOR MKDOCS MATERIAL
+   Clean, Professional Dark Mode
    ======================================== */
 
-/* Import monospace and modern fonts */
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap');
+/* Import modern fonts */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
 /* ========================================
-   ROOT VARIABLES - Terminal Color Palette
+   ROOT VARIABLES - Calm Dark Palette
    ======================================== */
 :root {
-    /* Primary terminal colors */
-    --terminal-black: #0a0a0a;
-    --terminal-dark: #0d1117;
-    --terminal-gray: #161b22;
-    --terminal-light-gray: #21262d;
-    --terminal-border: #30363d;
+    /* Primary dark colors */
+    --bg-darkest: #0f172a;
+    --bg-dark: #1e293b;
+    --bg-medium: #334155;
+    --bg-light: #475569;
+    --border-color: #475569;
 
-    /* Neon accent colors */
-    --neon-green: #00ff41;
-    --neon-cyan: #00d4ff;
-    --neon-purple: #bd93f9;
-    --neon-pink: #ff79c6;
-    --neon-orange: #ffb86c;
-    --neon-yellow: #f1fa8c;
-    --neon-red: #ff5555;
-    --neon-blue: #6272a4;
+    /* Accent colors - calm teal/blue */
+    --accent-primary: #14b8a6;
+    --accent-secondary: #06b6d4;
+    --accent-tertiary: #8b5cf6;
+    --accent-warm: #f59e0b;
+    --accent-soft: #64748b;
 
     /* Muted versions for backgrounds */
-    --muted-green: rgba(0, 255, 65, 0.1);
-    --muted-cyan: rgba(0, 212, 255, 0.1);
-    --muted-purple: rgba(189, 147, 249, 0.1);
+    --muted-primary: rgba(20, 184, 166, 0.1);
+    --muted-secondary: rgba(6, 182, 212, 0.1);
+    --muted-tertiary: rgba(139, 92, 246, 0.1);
 
     /* Text colors */
-    --text-primary: #e6edf3;
-    --text-secondary: #8b949e;
-    --text-muted: #6e7681;
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
 
     /* Material theme overrides */
-    --md-primary-fg-color: #00ff41;
-    --md-primary-fg-color--light: #4dff7c;
-    --md-primary-fg-color--dark: #00cc34;
-    --md-accent-fg-color: #00d4ff;
-    --md-accent-fg-color--transparent: rgba(0, 212, 255, 0.1);
+    --md-primary-fg-color: #14b8a6;
+    --md-primary-fg-color--light: #2dd4bf;
+    --md-primary-fg-color--dark: #0d9488;
+    --md-accent-fg-color: #06b6d4;
+    --md-accent-fg-color--transparent: rgba(6, 182, 212, 0.1);
 
     /* Default colors */
-    --md-default-bg-color: var(--terminal-dark);
+    --md-default-bg-color: var(--bg-dark);
     --md-default-fg-color: var(--text-primary);
 
-    /* Code syntax colors */
-    --syntax-comment: #6272a4;
-    --syntax-string: #f1fa8c;
-    --syntax-keyword: #ff79c6;
-    --syntax-function: #50fa7b;
-    --syntax-variable: #bd93f9;
-    --syntax-number: #ffb86c;
+    /* Code syntax colors - softer */
+    --syntax-comment: #64748b;
+    --syntax-string: #fcd34d;
+    --syntax-keyword: #f472b6;
+    --syntax-function: #34d399;
+    --syntax-variable: #a78bfa;
+    --syntax-number: #fb923c;
+
+    /* Legacy variable mappings for compatibility */
+    --terminal-black: var(--bg-darkest);
+    --terminal-dark: var(--bg-dark);
+    --terminal-gray: var(--bg-medium);
+    --terminal-light-gray: var(--bg-light);
+    --terminal-border: var(--border-color);
+    --neon-green: var(--accent-primary);
+    --neon-cyan: var(--accent-secondary);
+    --neon-purple: var(--accent-tertiary);
+    --muted-green: var(--muted-primary);
+    --muted-cyan: var(--muted-secondary);
+    --muted-purple: var(--muted-tertiary);
 }
 
-/* Light mode - still terminal-ish but lighter */
+/* Light mode */
 [data-md-color-scheme="default"] {
-    --terminal-black: #ffffff;
-    --terminal-dark: #f6f8fa;
-    --terminal-gray: #eaeef2;
-    --terminal-light-gray: #d0d7de;
-    --terminal-border: #d0d7de;
+    --bg-darkest: #ffffff;
+    --bg-dark: #f8fafc;
+    --bg-medium: #e2e8f0;
+    --bg-light: #cbd5e1;
+    --border-color: #cbd5e1;
 
-    --text-primary: #1f2328;
-    --text-secondary: #57606a;
-    --text-muted: #8b949e;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
 
-    --neon-green: #1a7f37;
-    --neon-cyan: #0969da;
-    --neon-purple: #8250df;
-    --neon-pink: #cf222e;
+    --accent-primary: #0d9488;
+    --accent-secondary: #0891b2;
+    --accent-tertiary: #7c3aed;
 
-    --md-default-bg-color: var(--terminal-dark);
+    --md-default-bg-color: var(--bg-dark);
     --md-default-fg-color: var(--text-primary);
 }
 
-/* Dark mode - full terminal experience */
+/* Dark mode */
 [data-md-color-scheme="slate"] {
-    --md-default-bg-color: var(--terminal-dark);
+    --md-default-bg-color: var(--bg-dark);
     --md-default-fg-color: var(--text-primary);
 }
 
@@ -89,37 +98,14 @@
    ======================================== */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: var(--terminal-dark);
+    background: var(--bg-dark);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Scanline effect overlay */
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    background: repeating-linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.1) 0px,
-        rgba(0, 0, 0, 0.1) 1px,
-        transparent 1px,
-        transparent 2px
-    );
-    z-index: 9999;
-    opacity: 0.03;
-}
-
-/* Matrix rain background effect (subtle) */
+/* Subtle gradient background for dark mode */
 [data-md-color-scheme="slate"] body {
-    background:
-        radial-gradient(ellipse at top, rgba(0, 255, 65, 0.03) 0%, transparent 50%),
-        radial-gradient(ellipse at bottom right, rgba(0, 212, 255, 0.02) 0%, transparent 50%),
-        linear-gradient(180deg, #0a0a0a 0%, #0d1117 50%, #0a0a0a 100%);
+    background: linear-gradient(180deg, var(--bg-darkest) 0%, var(--bg-dark) 100%);
     background-attachment: fixed;
 }
 
@@ -127,15 +113,13 @@ body::before {
    HEADER & NAVIGATION
    ======================================== */
 .md-header {
-    background: linear-gradient(180deg, var(--terminal-black) 0%, var(--terminal-dark) 100%);
-    border-bottom: 1px solid var(--neon-green);
-    box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
+    background: linear-gradient(180deg, var(--bg-darkest) 0%, var(--bg-dark) 100%);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .md-header[data-md-state="shadow"] {
-    box-shadow:
-        0 0 30px rgba(0, 255, 65, 0.3),
-        0 4px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 /* Header inner - ensure proper layout */
@@ -194,11 +178,7 @@ body::before {
     display: none !important;
 }
 
-.md-header__title::before {
-    content: "$ ";
-    color: var(--neon-green);
-    opacity: 0.8;
-}
+/* Clean header title - no terminal prompts */
 
 /* Fix tabs to not overlap with header title */
 .md-tabs {
@@ -229,16 +209,11 @@ body::before {
     opacity: 0.8;
 }
 
-.md-tabs__link::before {
-    content: "./";
-    color: var(--neon-cyan);
-    opacity: 0.6;
-}
+/* Clean navigation - no ./ prefix */
 
 .md-tabs__link:hover {
-    color: var(--neon-green) !important;
+    color: var(--accent-primary) !important;
     opacity: 1;
-    text-shadow: 0 0 10px var(--neon-green);
 }
 
 .md-tabs__link--active {
@@ -375,11 +350,7 @@ body::before {
     text-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
 }
 
-.md-typeset h1::before {
-    content: "# ";
-    color: var(--neon-cyan);
-    opacity: 0.7;
-}
+/* Clean headings - no # prefix */
 
 .md-typeset h2 {
     font-family: 'JetBrains Mono', monospace;
@@ -391,11 +362,7 @@ body::before {
     margin-top: 2rem;
 }
 
-.md-typeset h2::before {
-    content: "## ";
-    color: var(--neon-purple);
-    opacity: 0.6;
-}
+/* No ## prefix for h2 */
 
 .md-typeset h3 {
     font-family: 'JetBrains Mono', monospace;
@@ -405,11 +372,7 @@ body::before {
     margin-top: 1.5rem;
 }
 
-.md-typeset h3::before {
-    content: "### ";
-    color: var(--neon-pink);
-    opacity: 0.5;
-}
+/* No ### prefix for h3 */
 
 .md-typeset h4,
 .md-typeset h5,
@@ -975,9 +938,7 @@ body::before {
         font-size: 1.4rem;
     }
 
-    .md-typeset h1::before {
-        content: "# ";
-    }
+    /* No # prefix on mobile */
 
     .md-typeset h2 {
         font-size: 1.15rem;
@@ -1120,11 +1081,7 @@ body::before {
         text-overflow: ellipsis !important;
     }
 
-    .md-header__title::before {
-        content: "$ " !important;
-        display: inline !important;
-        color: var(--neon-green) !important;
-    }
+    /* No $ prefix on mobile header */
 }
 
 @media screen and (max-width: 400px) {
@@ -1244,12 +1201,12 @@ body::before {
     margin-bottom: 0.75rem;
 }
 
+/* Clean list bullets - no $ prefix */
 .md-typeset ul li::before {
-    content: "$";
+    content: "•";
     position: absolute;
-    left: 0;
-    color: var(--neon-green);
-    font-family: 'JetBrains Mono', monospace;
+    left: 0.5rem;
+    color: var(--accent-primary);
     font-weight: 600;
 }
 
