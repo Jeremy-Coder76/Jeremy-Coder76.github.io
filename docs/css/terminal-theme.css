@@ -978,9 +978,17 @@ body::before {
         margin: 0.5rem 0;
     }
 
-    /* Hide ASCII art on mobile - too complex for small screens */
+    /* Scale down ASCII art on mobile */
     .ascii-art {
-        display: none;
+        display: block;
+        overflow-x: auto;
+        margin: 0.5rem 0;
+    }
+
+    .ascii-art code {
+        font-size: 0.22rem !important;
+        line-height: 1.1 !important;
+        text-shadow: 0 0 5px rgba(0, 255, 65, 0.4);
     }
 
     /* Better table scrolling on mobile */
