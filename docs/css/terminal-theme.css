@@ -1040,12 +1040,29 @@ body::before {
 
     /* Ensure header title is visible on mobile */
     .md-header__title {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         letter-spacing: 0.5px;
+        flex-grow: 1 !important;
+        width: auto !important;
+        max-width: none !important;
+    }
+
+    .md-header__ellipsis {
+        display: flex !important;
+        width: auto !important;
+        max-width: none !important;
     }
 
     .md-header__title .md-header__topic {
         display: flex !important;
+        opacity: 1 !important;
+        position: static !important;
+        transform: none !important;
+        width: auto !important;
+    }
+
+    .md-header__title .md-header__topic .md-ellipsis {
+        display: inline !important;
         opacity: 1 !important;
     }
 
