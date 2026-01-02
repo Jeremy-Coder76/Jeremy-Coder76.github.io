@@ -2,25 +2,14 @@ site_name: jleclech blog
 site_description: Personal blog and journey documentation
 site_author: Jeremy LE CLEC'H
 
-# Theme configuration - Terminal/Code Aesthetic
+# Theme configuration - Terminal/Code Aesthetic (Dark Mode Only)
 theme:
   name: material
   custom_dir: docs/overrides
   palette:
-    # Light mode - still terminal-ish but readable
-    - scheme: default
-      primary: teal
-      accent: cyan
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-    # Dark mode - full terminal experience
-    - scheme: slate
-      primary: teal
-      accent: cyan
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
+    scheme: slate
+    primary: teal
+    accent: cyan
 
   font:
     text: Inter

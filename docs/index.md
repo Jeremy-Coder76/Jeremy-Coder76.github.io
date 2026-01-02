@@ -126,8 +126,8 @@ if __name__ == "__main__":
     }
     ```
 
-!!! tip "Environment"
-    Toggle between light and dark mode using the switch in the header. Dark mode provides the optimal developer experience!
+!!! tip "Terminal Mode"
+    This site runs in dark mode only for the authentic terminal experience!
 
 ---
 
