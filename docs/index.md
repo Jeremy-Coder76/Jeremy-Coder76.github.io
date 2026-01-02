@@ -79,17 +79,21 @@ Thoughts on career pivots, continuous learning, and the mindset shifts required 
 
 ## Quick Start
 
-```javascript
-// Initialize your exploration
-const blog = new JLeclechBlog();
+```python
+#!/usr/bin/env python3
+from jleclech_blog import Blog
 
-// Available methods
-blog.exploreJourney();    // Read my story
-blog.viewTechnical();     // See the code
-blog.aboutAuthor();       // Learn about me
+# Initialize your exploration
+blog = Blog()
 
-// Start here:
-blog.init();
+# Available methods
+blog.explore_journey()    # Read my story
+blog.view_technical()     # See the code
+blog.about_author()       # Learn about me
+
+# Start here:
+if __name__ == "__main__":
+    blog.run()
 ```
 
 ---
@@ -107,8 +111,8 @@ blog.init();
 
 ## Run Application
 
-[`npm run journey`](my_journey/journey.md){ .md-button .md-button--primary }
-[`npm run about`](about.md){ .md-button }
+[`python journey.py`](my_journey/journey.md){ .md-button .md-button--primary }
+[`python about.py`](about.md){ .md-button }
 
 ---
 
