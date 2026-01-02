@@ -154,6 +154,13 @@ body::before {
     margin-left: 0.5rem;
 }
 
+/* Force the ellipsis container to show content properly */
+.md-header__ellipsis {
+    display: flex !important;
+    align-items: center !important;
+    height: auto !important;
+}
+
 /* Ensure title topic (the actual text) is visible - ALWAYS show first topic (site name) */
 .md-header__title .md-header__topic {
     display: flex !important;
