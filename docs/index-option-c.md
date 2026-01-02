@@ -1,24 +1,5 @@
 # Welcome
 
-<div class="ascii-art">
-
-```
-     ██╗██╗     ███████╗ ██████╗██╗     ███████╗ ██████╗██╗  ██╗
-     ██║██║     ██╔════╝██╔════╝██║     ██╔════╝██╔════╝██║  ██║
-     ██║██║     █████╗  ██║     ██║     █████╗  ██║     ███████║
-██   ██║██║     ██╔══╝  ██║     ██║     ██╔══╝  ██║     ██╔══██║
-╚█████╔╝███████╗███████╗╚██████╗███████╗███████╗╚██████╗██║  ██║
- ╚════╝ ╚══════╝╚══════╝ ╚═════╝╚══════╝╚══════╝ ╚═════╝╚═╝  ╚═╝
-
-         ╔═══════════════════════════════════════════╗
-         ║   NETWORK ENGINEER → AUTOMATION EXPERT   ║
-         ╚═══════════════════════════════════════════╝
-```
-
-</div>
-
----
-
 ```yaml
 # ═══════════════════════════════════════════════════════════════
 #                    jleclech.blog/config.yml
@@ -79,21 +60,17 @@ Thoughts on career pivots, continuous learning, and the mindset shifts required 
 
 ## Quick Start
 
-```python
-#!/usr/bin/env python3
-from jleclech_blog import Blog
+```javascript
+// Initialize your exploration
+const blog = new JLeclechBlog();
 
-# Initialize your exploration
-blog = Blog()
+// Available methods
+blog.exploreJourney();    // Read my story
+blog.viewTechnical();     // See the code
+blog.aboutAuthor();       // Learn about me
 
-# Available methods
-blog.explore_journey()    # Read my story
-blog.view_technical()     # See the code
-blog.about_author()       # Learn about me
-
-# Start here:
-if __name__ == "__main__":
-    blog.run()
+// Start here:
+blog.init();
 ```
 
 ---
@@ -111,8 +88,8 @@ if __name__ == "__main__":
 
 ## Run Application
 
-[`python journey.py`](my_journey/journey.md){ .md-button .md-button--primary }
-[`python about.py`](about.md){ .md-button }
+[`npm run journey`](my_journey/journey.md){ .md-button .md-button--primary }
+[`npm run about`](about.md){ .md-button }
 
 ---
 

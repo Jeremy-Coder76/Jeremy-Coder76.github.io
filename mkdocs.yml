@@ -2,29 +2,29 @@ site_name: jleclech blog
 site_description: Personal blog and journey documentation
 site_author: Jeremy LE CLEC'H
 
-# Theme configuration - Material is mobile-first and beautiful
+# Theme configuration - Terminal/Code Aesthetic
 theme:
   name: material
   custom_dir: docs/overrides
   palette:
-    # Light mode with autumn colors
+    # Light mode - still terminal-ish but readable
     - scheme: default
-      primary: deep orange
-      accent: amber
+      primary: teal
+      accent: cyan
       toggle:
-        icon: material/weather-sunny
+        icon: material/toggle-switch-off-outline
         name: Switch to dark mode
-    # Dark mode with warm autumn tones
+    # Dark mode - full terminal experience
     - scheme: slate
-      primary: deep orange
-      accent: amber
+      primary: teal
+      accent: cyan
       toggle:
-        icon: material/weather-night
+        icon: material/toggle-switch
         name: Switch to light mode
 
   font:
-    text: Merriweather
-    code: Fira Code
+    text: Inter
+    code: JetBrains Mono
 
   features:
     # Navigation features for better mobile UX
@@ -38,10 +38,11 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
+    - content.code.annotate
     - toc.follow
 
   icon:
-    logo: material/leaf-maple
+    logo: material/console
 
   # Custom colors defined in CSS
   language: en
@@ -80,7 +81,7 @@ markdown_extensions:
 
 # Custom CSS and JS
 extra_css:
-  - css/autumn-theme.css
+  - css/terminal-theme.css
 
 extra_javascript:
   - js/table-wrapper.js
